@@ -1,15 +1,18 @@
-import styles from "./page.module.css";
+"use client"; // Needed for client components
+
+import { useEffect, useState } from "react";
 
 export default function Home() {
-  return (
-    <div className={styles.container}>
-      <h2 className={styles.title}>Welcome to My Next.js App 🚀</h2>
-      <p className={styles.text}>
-        Start building by editing <code>src/app/page.tsx</code>.
-      </p>
-      <p className={styles.text}>
-        These styles come from <code>page.module.css</code>.
-      </p>
-    </div>
-  );
+  const [message, setMessage] = useState("");
+
+  useEffect(() => {
+    async function fetchData() {
+      const res = await fetch("/api/movies");
+      const data = await res.json();
+      setMessage(data.message);
+    }
+    fetchData();
+  }, []);
+
+  return <h1>{message}</h1>;
 }
