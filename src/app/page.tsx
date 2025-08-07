@@ -7,12 +7,16 @@ export default function Home() {
 
   useEffect(() => {
     async function fetchData() {
-      const res = await fetch("/api/movies");
+      const res = await fetch("/api/showtimes");
       const data = await res.json();
       setMessage(data.message);
     }
     fetchData();
   }, []);
 
-  return <h1>{message}</h1>;
+  return (
+    <h1>
+      {message}
+    </h1>
+  );
 }
