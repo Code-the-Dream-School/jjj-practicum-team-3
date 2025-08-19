@@ -1,17 +1,20 @@
-interface MovieCardProps {
-    posterSrc: string;
-    title: string;
-}
-const MovieCardHomePage = ({ posterSrc, title }: MovieCardProps) => (
-    <div className="relative group w-48 mx-2 my-4">
-        <img
-            src={posterSrc}
-            alt={title}
-            className="rounded-lg shadow-lg transform group-hover:scale-105 transition-transform duration-300"
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-40 rounded-lg flex items-end p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <span className="text-white text-sm font-semibold">{title}</span>
+import { IMovie } from '@/types/IMovie';
+
+const MovieCardHomePage = ({ movie }: { movie: IMovie }) => {
+    return (
+        <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+            <div className="relative w-full h-80">
+                <img
+                    src={movie.Poster}
+                    alt={movie.Title}
+                    className="w-full h-full object-cover rounded-t-lg"
+                />
+            </div>
+            <div className="p-4 text-center">
+                <h3 className="text-sm font-semibold truncate text-white">{movie.Title}</h3>
+                <p className="text-xs text-gray-400">{movie.Year}</p>
+            </div>
         </div>
-    </div>
-);
+    );
+};
 export default MovieCardHomePage;

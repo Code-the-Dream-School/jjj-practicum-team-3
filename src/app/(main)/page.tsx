@@ -5,7 +5,7 @@ import HomePage from '@/components/specific/HomePage'; // Example path
 
 const App = () => {
     return (
-        <div className="bg-gray-800 text-white font-sans">
+        <div className="bg-[#151925] text-white font-sans">
             <Header />
             <HomePage />
             <Footer />
