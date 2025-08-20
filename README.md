@@ -18,18 +18,34 @@ In short, **Next.js = React + superpowers** 🚀.
 
 ```
 my-next-app/
-├── public/          # Static assets (images, fonts, etc.)
-├── src/             # Main source code
-│   ├── pages/       # Pages (routes) go here (e.g., index.js = "/")
-│   │   ├── api/     # API routes
-│   │   └── index.js # Homepage
-│   ├── components/  # Reusable React components
-│   ├── styles/      # Global and component-level CSS
-│   └── lib/         # (Optional) Helper functions or utilities
-├── package.json     # Dependencies and scripts
-└── next.config.js   # (Optional) Next.js configuration
+├── public/          # Static assets (images, icons, etc.)
+├── src/
+│ ├── app/           # App Router
+│ │ ├── layout.tsx   # Global layout for all pages
+│ │ ├── page.tsx     # Homepage ("/")
+│ │ ├── movies/      # Movie-related pages
+│ │ │ ├── page.tsx   # List or search movies
+│ │ │ └── [id]/      # Dynamic route for movie details
+│ │ │ └── page.tsx
+│ │ ├── favorites/   # User's favorite movies
+│ │ │ └── page.tsx
+│ │ ├── profile/     # User profile page
+│ │ │ └── page.tsx
+│ │ ├── api/         # Backend API routes
+│ │ │ ├── movies/
+│ │ │ │ └── route.ts # GET, POST, etc. for movies
+│ │ │ ├── favorites/
+│ │ │ │ └── route.ts # Manage favorites
+│ │ │ └── users/
+│ │ │ └── route.ts   # User management
+│ ├── components/    # Reusable React components (e.g., MovieCard, Navbar)
+│ ├── lib/           # Helper functions, API clients, etc.
+│ ├── styles/        # CSS modules or global styles
+├── package.json     # Project dependencies and scripts
+├── next.config.ts   # Next.js configuration
+├── tsconfig.json   # TypeScript configuration
+└── README.md       # Project documentation
 ```
-
 ## How to Run This Project
 
 ### **1. Install Dependencies**
