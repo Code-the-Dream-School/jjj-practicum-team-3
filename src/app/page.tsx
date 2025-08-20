@@ -1,22 +1,5 @@
-"use client"; // Needed for client components
+import HomePage from './(main)/page';
 
-import { useEffect, useState } from "react";
-
-export default function Home() {
-  const [message, setMessage] = useState("");
-
-  useEffect(() => {
-    async function fetchData() {
-      const res = await fetch("/api/users");
-      const data = await res.json();
-      setMessage(data.message);
-    }
-    fetchData();
-  }, []);
-
-  return (
-    <h1>
-      {message}
-    </h1>
-  );
+export default function RootPage() {
+    return <HomePage />;
 }

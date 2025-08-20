@@ -1,8 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "My Next.js App",
-  description: "A clean Next.js starter layout with fixed width",
+  title: "ComeAndSee",
+  description: "Cinema tickets booking system",
 };
 
 export default function RootLayout({
@@ -13,40 +13,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header
-          style={{
-            padding: "1rem",
-            backgroundColor: "#f0f0f0",
-            borderBottom: "1px solid #ddd",
-          }}
-        >
-          <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
-            <h1 style={{ margin: 0 }}>My App Header</h1>
-          </div>
-        </header>
 
-        <main
-          style={{
-            maxWidth: "1000px",
-            margin: "2rem auto",
-            padding: "0 1rem",
-          }}
-        >
+
+        <main>
           {children}
         </main>
 
-        <footer
-          style={{
-            padding: "1rem",
-            backgroundColor: "#f0f0f0",
-            borderTop: "1px solid #ddd",
-            textAlign: "center",
-          }}
-        >
-          <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
-            © 2025 My App
-          </div>
-        </footer>
+
       </body>
     </html>
   );
