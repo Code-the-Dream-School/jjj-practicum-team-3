@@ -2,16 +2,14 @@
 // IMPORTANT: You must first create the 'movies' table in your Supabase project
 // using the SQL provided in the accompanying instructions.
 import { supabase } from '../services/supabaseClient.js';
-import { movieData } from '../services/movies.js'; // Assuming your movie data is exported here.
+import { movieData } from '../services/movies.js'; 
 /**
  * Inserts movie data from a local JSON file into the Supabase 'movies' table.
  */
 async function insertMovies() {
   console.log('Starting movie data insertion...');
   const movies = movieData.movies;
-  // Use a for...of loop to insert each movie one by one.
-  // This is a simple approach. For very large datasets, you might
-  // want to use a bulk insert method or a batch process.
+
   for (const movie of movies) {
     try {
       const { data, error } = await supabase

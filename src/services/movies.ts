@@ -5,10 +5,6 @@ const supabaseKey: string = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
 
 const supabase = createClient(supabaseUrl, supabaseKey);
 
-// export const supabase: SupabaseClient = createClient(supabaseUrl, supabaseKey);
-
-// Your movie data as a JavaScript array
-
 
 export const movieData = {
     "movies": [
@@ -37,9 +33,6 @@ export const movieData = {
     ]
 };
 
-// const movieData = [ 
-//     { "id": "1", "Title": "Nobody 2", "Year": "2025", "Poster": "/posters/1.png" }, { "id": "2", "Title": "Weapons", "Year": "2025", "Poster": "/posters/2.png" }, // ...and so on for all your movies ]; 
-// Asynchronous function to insert the data 
 async function insertMovies() { try { const { data, error } = await supabase .from('movies') .insert(movieData); if (error) { console.error('Error inserting data:', error); } else { console.log('Data inserted successfully:', data); } } catch (err) { console.error('An unexpected error occurred:', err); } } 
-// Call the function to run the insertion 
+
 insertMovies();
