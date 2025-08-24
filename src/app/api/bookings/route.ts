@@ -1,7 +1,18 @@
+import { supabase } from "@/lib/supabaseClient";
+
 export async function GET() {
-  return new Response(JSON.stringify({ message: "GET All Bookings" }), {
+  const { data, error } = await supabase.from("bookings").select("*");
+
+  if (error) {
+    return new Response(JSON.stringify({ error: error.message }), {
+      headers: { "Content-Type": "application/json" },
+      status: 500,
+    });
+  }
+
+  return new Response(JSON.stringify(data), {
     headers: { "Content-Type": "application/json" },
-    status: 200
+    status: 200,
   });
 }
 
