@@ -11,7 +11,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-     "run-script": "ts-node --esm src/scripts/insertData.ts"
+    "run-script": "ts-node --esm src/scripts/insertData.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.54.0",

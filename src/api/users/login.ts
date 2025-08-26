@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import { supabase } from "../../lib/supabaseClient";
+import { supabase } from "../../services/supabaseClient";
 
 interface User {
   id: number;

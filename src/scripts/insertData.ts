@@ -8,12 +8,14 @@ import { movieData } from '../services/movies.js';
  */
 async function insertMovies() {
   console.log('Starting movie data insertion...');
+  
+  //Extract the array of movies
   const movies = movieData.movies;
 
   for (const movie of movies) {
     try {
       const { data, error } = await supabase
-        .from('movies') // The name of your table in Supabase
+        .from('movies') // Supabase table name
         .insert([
           {
             // id: movie.id,
@@ -28,7 +30,7 @@ async function insertMovies() {
             poster: movie.Poster,
             comingsoon: movie.ComingSoon,
           },
-        ])
+        ]);
      
       if (error) {
         console.error(`Error inserting movie ${movie.Title}:`, error.message);
