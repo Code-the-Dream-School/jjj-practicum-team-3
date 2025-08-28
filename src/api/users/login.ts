@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import { supabase } from "../../services/supabaseClient";
+import { supabase } from "../../services/supabaseClient.js";
 
 interface User {
   id: number;
