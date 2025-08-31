@@ -4,7 +4,8 @@ export interface IBooking {
   user_id: string;
   user_email: string;
   seat_id: string;
-  booking_date: string;
+  //YYYY-MM-DD: 2030-10-02 
+  booking_date: string | Date;
   payment_status: string;
   showtime_id: string;
   confirmation_code: string;
