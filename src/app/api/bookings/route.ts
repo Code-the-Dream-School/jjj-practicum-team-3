@@ -23,7 +23,7 @@ export async function POST(request: Request) {
     const booking = body as IBooking;
 
     if (
-      !booking?.user_email ||
+      !booking?.user_id ||
       !booking?.seat_id ||
       !booking?.booking_date ||
       !booking?.payment_status
@@ -31,7 +31,7 @@ export async function POST(request: Request) {
       return new Response(
         JSON.stringify({
           error:
-            "Missing one or more required fields: user_email, seat_id, booking_date, payment_status",
+            "Missing one or more required fields: user_id, seat_id, booking_date, payment_status",
         }),
         { headers: { "Content-Type": "application/json" }, status: 400 }
       );
@@ -41,6 +41,7 @@ export async function POST(request: Request) {
       .from("bookings")
       .insert([
         {
+          user_id: booking.user_id,
           user_email: booking.user_email,
           seat_id: booking.seat_id,
           booking_date: booking.booking_date,
