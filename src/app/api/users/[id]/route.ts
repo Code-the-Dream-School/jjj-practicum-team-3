@@ -43,4 +43,5 @@ export async function DELETE(_: Request, { params }: { params: { id: string } })
   }
 
   return NextResponse.json({ message: "User deleted successfully" }, { status: 200 });
+
 }
