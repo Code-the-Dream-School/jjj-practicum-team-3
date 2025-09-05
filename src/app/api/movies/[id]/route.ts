@@ -1,34 +1,28 @@
-//GET, PATCH, DELETE
-export async function GET({ params }: { params: { id: string } }) {
-  return new Response(
-    JSON.stringify({ message: `Movie with id: ${params.id}` }),
-    {
-      headers: { "Content-Type": "application/json" },
-      status: 200,
-    }
-  );
+import { NextResponse } from "next/server";
+import { updateMovie, deleteMovie, getMovieById } from "@/actions/movies";
+
+export async function GET(req: Request, context: { params: Promise<{ id: string }> }) {
+  const { id } = await context.params;   // ⬅️ await params
+  const result = await getMovieById(id);
+  return NextResponse.json(result);
 }
 
-export async function PATCH(
-  request: Request,
-  { params }: { params: { id: string } }
-) {
-  const body = await request.json();
-  return new Response(
-    JSON.stringify(`Movie with id ${params.id} has been updated: ` + body),
-    {
-      headers: { "Content-Type": "application/json" },
-      status: 204,
-    }
-  );
+export async function PUT(req: Request, context: { params: Promise<{ id: string }> }) {
+  const { id } = await context.params;
+  const body = await req.json();
+  const result = await updateMovie(id, body);
+  return NextResponse.json(result);
 }
 
-export async function DELETE({ params }: { params: { id: string } }) {
-  return new Response(
-    JSON.stringify({ message: `Movie with ID ${params.id} has been deleted` }),
-    {
-      headers: { "Content-Type": "application/json" },
-      status: 204,
-    }
-  );
+export async function PATCH(req: Request, context: { params: Promise<{ id: string }> }) {
+  const { id } = await context.params;
+  const body = await req.json();
+  const result = await updateMovie(id, body);
+  return NextResponse.json(result);
+}
+
+export async function DELETE(req: Request, context: { params: Promise<{ id: string }> }) {
+  const { id } = await context.params;
+  const result = await deleteMovie(id);
+  return NextResponse.json(result);
 }
