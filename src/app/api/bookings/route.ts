@@ -35,8 +35,7 @@ export async function POST(request: Request) {
         }),
         { headers: { "Content-Type": "application/json" }, status: 400 }
       );
-    }
-
+    } 
     const { data, error } = await supabase
       .from("bookings")
       .insert([
