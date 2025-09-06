@@ -17,9 +17,31 @@ export async function GET() {
 }
 
 export async function POST(request: Request) {
-  const body = await request.json();
-  return new Response(JSON.stringify("Showtime created: " + body), {
-    headers: { "Content-Type": "application/json" },
-    status: 201,
-  });
+  try {
+    const body = await request.json();
+    const theater = body as ITheater;
+
+    const { data, error } = await supabase
+      .from("theaters")
+      .insert([
+        {
+          name: theater.name,
+          address: theater.address,
+          capacity: theater.capacity,
+          is_active: theater.is_active,
+        },
+      ])
+      .select()
+      .single();
+    return new Response(JSON.stringify(theater), {
+      headers: { "Content-Type": "application/json" },
+      status: 201,
+    });
+  } catch (err) {
+    console.error("Unexpected error:", err);
+    return new Response(JSON.stringify({ error: "Invalid request" }), {
+      headers: { "Content-Type": "application/json" },
+      status: 400,
+    });
+  }
 }
