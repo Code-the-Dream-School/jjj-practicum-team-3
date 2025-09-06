@@ -73,7 +73,7 @@ export const getMovieById = async (id: string) => {
             };
         }
         
-        if(data.length === 0) {
+        if(!data || data.length === 0) {
             return {
                 success: false, 
                 message: "Movie not found",

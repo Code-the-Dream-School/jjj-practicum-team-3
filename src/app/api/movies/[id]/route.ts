@@ -7,13 +7,6 @@ export async function GET(req: Request, context: { params: Promise<{ id: string 
   return NextResponse.json(result);
 }
 
-export async function PUT(req: Request, context: { params: Promise<{ id: string }> }) {
-  const { id } = await context.params;
-  const body = await req.json();
-  const result = await updateMovie(id, body);
-  return NextResponse.json(result);
-}
-
 export async function PATCH(req: Request, context: { params: Promise<{ id: string }> }) {
   const { id } = await context.params;
   const body = await req.json();
