@@ -1,4 +1,4 @@
-import { supabase } from "@/lib/supabaseClient";
+import {supabase} from "@/lib/supabaseClient"
 import { IBooking } from "@/types/IBooking";
 
 export async function GET() {
