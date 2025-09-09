@@ -1,8 +1,10 @@
 'use client';
 import MovieSlider from "@/components/specific/MovieSlider";
 import React, { useState } from 'react';
+import Link from "next/link";
 const HomePage = () => {
     const [movieFilter, setMovieFilter] = useState<string>('');
+    const [theaterFilter, setTheaterFilter] = useState<string>('');
     const movieData = {
         "movies": [
             { "id": "1", "Title": "Nobody 2", "Year": "2025", "RunTime": "1 hr 29 min", "Genre": "Action", "Director": "Timo Tjahjanto", "Actors": "Bob Odenkirk, Connie Nielsen, John Ortiz", "Description": "Workaholic assassin Hutch Mansell takes his family on a much-needed vacation to the small tourist town of Plummerville. However, he soon finds himself in the crosshairs of a corrupt theme-park operator, a shady sheriff, and a bloodthirsty crime boss.", "Country": "United States", "Poster": "/posters/1.png", "ComingSoon": false },
@@ -29,9 +31,16 @@ const HomePage = () => {
             { "id": "22", "Title": "Stans", "Year": "2025", "RunTime": "2 hr 5 min", "Genre": "Horror", "Director": "Unknown", "Actors": "Unknown", "Description": "A group of fans goes to extreme lengths to meet their favorite celebrity, only to find out that their idol is a monster hiding in plain sight.", "Country": "United States", "Poster": "/posters/21.png", "ComingSoon": true }
         ]
     };
-
+    const theaterData = [
+        { "id": "1", "name": "Grandview Theater", "address": "123 Main Street" },
+        { "id": "2", "name": "Downtown Cinema", "address": "456 Oak Avenue" },
+        { "id": "3", "name": "Northside Drive-In", "address": "789 Pine Boulevard" }
+    ];
     const filteredMovies = movieData.movies.filter(movie =>
         movie.Title.toLowerCase().includes(movieFilter.toLowerCase())
+    );
+    const filteredTheaters = theaterData.filter(theater =>
+        theater.name.toLowerCase().includes(theaterFilter.toLowerCase())
     );
     const comingSoonMovies = filteredMovies.filter(movie => movie.ComingSoon);
     const regularMovies = filteredMovies.filter(movie => !movie.ComingSoon);
@@ -51,7 +60,26 @@ const HomePage = () => {
                     value={movieFilter}
                     onChange={(e) => setMovieFilter(e.target.value)}
                 />
-                <input type="text" placeholder="Theater" className="w-full md:w-1/3 bg-gray-700 text-gray-200 p-3 rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-2 focus:ring-blue-500"/>
+                <div className="relative w-full md:w-1/3">
+                <input
+                    type="text"
+                    placeholder="Theater"
+                    className="w-full md:w-1/3 bg-gray-700 text-gray-200 p-3 rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-2 focus:ring-blue-500"
+                    value={theaterFilter}
+                    onChange={(e) => setTheaterFilter(e.target.value)}
+                />
+                    {theaterFilter.length > 0 && filteredTheaters.length > 0 && (
+                        <div className="absolute top-full left-0 right-0 mt-2 bg-gray-800 border border-gray-600 rounded-lg shadow-lg z-10 max-h-60 overflow-y-auto">
+                            {filteredTheaters.map(theater => (
+                                <Link key={theater.id} href={`/theater-results?theaterId=${theater.id}`} passHref legacyBehavior>
+                                    <a className="block p-3 text-gray-200 hover:bg-gray-700 cursor-pointer">
+                                        {theater.name}
+                                    </a>
+                                </Link>
+                            ))}
+                        </div>
+                    )}
+                </div>
             </div>
 
             {/* Movies Section using the new MovieSlider component */}
