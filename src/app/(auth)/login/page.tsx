@@ -12,10 +12,21 @@ const SignIn: React.FC = () => {
         e.preventDefault();
         setMessage(null);
         //console.log('Login attempt with:', { email, password });
-        try {
-            const { ok, data } = await api.login(email, password);
+        const trimmedEmail = email.trim().toLowerCase();
+        const trimmedPassword = password.trim();
 
-            if (ok) {
+        try {
+            const res = await fetch("/api/users/login", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ trimmedEmail, trimmedPassword }),
+                credentials: "include", // ✅ send/receive cookies
+              });
+          
+              const data = await res.json();
+            // const { ok, data } = await api.login(trimmedEmail, trimmedPassword);
+
+            if (res.ok) {
                 setMessage({ text: 'Login successful!', type: 'success' });
                 setTimeout(() => router.push('/'), 2000);
             } else {
