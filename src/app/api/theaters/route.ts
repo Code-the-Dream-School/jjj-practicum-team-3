@@ -21,6 +21,34 @@ export async function POST(request: Request) {
     const body = await request.json();
     const theater = body as ITheater;
 
+    if (
+      !theater?.name ||
+      !theater?.address ||
+      theater.capacity === undefined ||
+      theater.is_active === undefined
+    ) {
+      return new Response(
+        JSON.stringify({
+          error:
+            "Missing one or more required fields: name, address, capacity, is_active",
+        }),
+        { headers: { "Content-Type": "application/json" }, status: 400 }
+      );
+    }
+    if (theater.name.length < 2 || theater.name.length > 100) {
+      return new Response(
+        JSON.stringify({ error: "Theater name must be 2–100 characters" }),
+        { headers: { "Content-Type": "application/json" }, status: 400 }
+      );
+    }
+
+    if (!Number.isInteger(theater.capacity) || theater.capacity <= 0) {
+      return new Response(
+        JSON.stringify({ error: "Capacity must be a positive integer" }),
+        { headers: { "Content-Type": "application/json" }, status: 400 }
+      );
+    }
+    
     const { data, error } = await supabase
       .from("theaters")
       .insert([
