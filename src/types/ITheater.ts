@@ -1,7 +1,10 @@
+import {ITheaterMovie} from "@/types/ITheaterMovie";
+
 export interface ITheater {
-    id: number,
-    name: string,
-    address: string,
-    capacity: number,
-    is_active: boolean
+    id: string;
+    name: string;
+    latitude: number;
+    longitude: number;
+    address: string;
+    movies: ITheaterMovie[];
 }
