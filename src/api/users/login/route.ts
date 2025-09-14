@@ -1,53 +1,3 @@
-// import { NextResponse } from "next/server";
-// import supabase from "@/config/supabase-config";
-// import bcrypt from "bcryptjs";
-// import jwt from "jsonwebtoken";
-
-// export async function POST(req: Request) {
-//   try {
-//     const body = await req.json();
-//     const { email, password } = body;
-
-//     // 1. Find user by email
-//     const { data: user, error } = await supabase
-//       .from("users")
-//       .select("*")
-//       .eq("email", email.toLowerCase().trim())
-//       .single();
-
-//     if (error || !user) {
-//       return NextResponse.json({ error: "Invalid credentials" }, { status: 401 });
-//     }
-
-//     // 2. Compare password
-//     const isMatch = await bcrypt.compare(password, user.password);
-//     if (!isMatch) {
-//       return NextResponse.json({ error: "Invalid credentials" }, { status: 401 });
-//     }
-
-//     // 3. Create JWT
-//     const token = jwt.sign(
-//       { userId: user.id, email: user.email },
-//       process.env.JWT_SECRET!,
-//       { expiresIn: "1d" }
-//     );
-
-//     // 4. Set cookie
-//     const res = NextResponse.json({ success: true, message: "Login successful" });
-//     res.cookies.set("jwt_token", token, {
-//       httpOnly: true,   // prevents JS access (XSS safe)
-//       secure: process.env.NODE_ENV === "production", // HTTPS only in prod
-//       sameSite: "strict",
-//       path: "/",
-//       maxAge: 60 * 60 * 24, // 1 day
-//     });
-
-//     return res;
-//   } catch (err: any) {
-//     return NextResponse.json({ error: err.message }, { status: 500 });
-//   }
-// }
-
 import { NextResponse } from "next/server";
 import supabase from "@/config/supabase-config";
 import bcrypt from "bcryptjs";
@@ -56,37 +6,53 @@ import jwt from "jsonwebtoken";
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-    const { email, password } = body;
+    const { username, email, password } = body;
 
-    // 1. Find user by email
-    const { data: user, error } = await supabase
+    if (!username || !email || !password) {
+      return NextResponse.json({ error: "All fields are required" }, { status: 400 });
+    }
+
+    // 1. Check if user already exists
+    const { data: existingUser } = await supabase
       .from("users")
-      .select("*")
+      .select("id")
       .eq("email", email.toLowerCase().trim())
       .single();
 
-    if (error || !user) {
-      return NextResponse.json({ error: "Invalid credentials" }, { status: 401 });
+    if (existingUser) {
+      return NextResponse.json({ error: "User already exists" }, { status: 400 });
     }
 
-    // 2. Compare password (bcrypt)
-    const isMatch = await bcrypt.compare(password, user.password);
-    if (!isMatch) {
-      return NextResponse.json({ error: "Invalid credentials" }, { status: 401 });
+    // 2. Hash password
+    const hashedPassword = await bcrypt.hash(password, 10);
+
+    // 3. Insert user
+    const { data, error } = await supabase.from("users").insert([
+      {
+        username,
+        email: email.toLowerCase().trim(),
+        password: hashedPassword,
+        role: "user",
+        is_active: true,
+      },
+    ]).select().single();
+
+    if (error) {
+      return NextResponse.json({ error: error.message }, { status: 500 });
     }
 
-    // 3. Create JWT
+    // 4. Create JWT
     const token = jwt.sign(
-      { userId: user.id, email: user.email },
+      { userId: data.id, email: data.email },
       process.env.JWT_SECRET!,
       { expiresIn: "1d" }
     );
 
-    // 4. Send response with cookie
+    // 5. Send response with cookie
     const response = NextResponse.json({
       success: true,
-      message: "Login successful",
-      user: { id: user.id, email: user.email, username: user.username },
+      message: "User registered successfully",
+      user: { id: data.id, email: data.email, username: data.username },
       token,
     });
 

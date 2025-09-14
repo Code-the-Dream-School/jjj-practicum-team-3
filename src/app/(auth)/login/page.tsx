@@ -11,34 +11,40 @@ const SignIn: React.FC = () => {
     const handleLogin = async (e: React.FormEvent) => {
         e.preventDefault();
         setMessage(null);
-        //console.log('Login attempt with:', { email, password });
         const trimmedEmail = email.trim().toLowerCase();
         const trimmedPassword = password.trim();
-
+    
         try {
-            const res = await fetch("/api/users/login", {
+            const res = await fetch("/api/users/login", { 
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ trimmedEmail, trimmedPassword }),
-                credentials: "include", // ✅ send/receive cookies
-              });
-          
-              const data = await res.json();
-            // const { ok, data } = await api.login(trimmedEmail, trimmedPassword);
-
-            if (res.ok) {
+                body: JSON.stringify({ email: trimmedEmail, password: trimmedPassword }), 
+                credentials: "include",
+            });
+        
+            const data = await res.json();
+    
+            if (res.ok && data.token) {
                 setMessage({ text: 'Login successful!', type: 'success' });
+
+                // ✅ Save token to localStorage
+                api.saveToken(data.token);
+
+                if (data.user?.id) {
+                    const userRes = await fetch(`/api/users/${data.user.id}`);
+                    console.log('User details:', await userRes.json());
+                }
                 setTimeout(() => router.push('/'), 2000);
             } else {
-                setMessage({ text: data.error || 'Login failed', type: 'error' });
-                console.error('Login failed:', data.error);
+                setMessage({ text: data.error || data.message || 'Login failed', type: 'error' });
+                console.error('Login failed:', data.error || data.message);
             }
         } catch (error) {
             console.error('An unexpected error occurred:', error);
             setMessage({ text: 'An unexpected error occurred.', type: 'error' });
         }
-
     };
+
     const handleRegister = () => {
         console.log('Redirecting to registration page...');
         router.push('/sign-up');
@@ -66,6 +72,7 @@ const SignIn: React.FC = () => {
                                 placeholder="Enter your email"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
+                                autoComplete="email"  // Added this
                                 className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200"
                                 required
                             />
@@ -80,6 +87,7 @@ const SignIn: React.FC = () => {
                                 placeholder="Enter your password"
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
+                                autoComplete="current-password" //Added this
                                 className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200"
                                 required
                             />

@@ -28,12 +28,11 @@ export const api = {
                 }),
             });
 
-            // const data = await response.json();
             const text = await response.text();
                 console.log("Raw signup response:", text);
                 const data = text ? JSON.parse(text) : {};
-            if (response.ok && data.data) {
-                api.saveToken(data.data); //stores JWT
+            if (response.ok && data.token) {
+                api.saveToken(data.token); //stores JWT
             }
 
             return { ok: response.ok, data };
