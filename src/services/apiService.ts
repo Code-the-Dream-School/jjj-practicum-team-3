@@ -22,12 +22,17 @@ export const api = {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ email, password }),
+                body: JSON.stringify({ 
+                    email: email.trim().toLowerCase(), 
+                    password: password.trim(), 
+                }),
             });
 
-            const data = await response.json();
+            const text = await response.text();
+                console.log("Raw signup response:", text);
+                const data = text ? JSON.parse(text) : {};
             if (response.ok && data.token) {
-                api.saveToken(data.token);
+                api.saveToken(data.token); //stores JWT
             }
 
             return { ok: response.ok, data };
@@ -43,10 +48,13 @@ export const api = {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ name, email, password }),
+                body: JSON.stringify({ username: name, email, password }),
             });
 
-            const data = await response.json();
+            // const data = await response.json();
+            const text = await response.text();
+                console.log("Raw signup response:", text);
+                const data = text ? JSON.parse(text) : {};
             if (response.ok && data.token) {
                 api.saveToken(data.token);
             }
