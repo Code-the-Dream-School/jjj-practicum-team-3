@@ -4,13 +4,13 @@ import bcrypt from "bcryptjs";
 
 export async function POST(req: Request) {
   try {
-    const { username, password } = await req.json();
+    const { email, password } = await req.json();
 
     // 1️⃣ Fetch the user by username
     const { data: user, error } = await supabase
       .from("users")
       .select("*")
-      .eq("username", username)
+      .eq("email", email.toLowerCase().trim())
       .single();
 
     if (error || !user) {
@@ -27,7 +27,7 @@ export async function POST(req: Request) {
     return NextResponse.json({
       message: "Login successful",
       token: "example-token",
-      user,
+      user: user.id, email: user.email, username: user.username ,
     }, { status: 200 });
 
   } catch (err: any) {

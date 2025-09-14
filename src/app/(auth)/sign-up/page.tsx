@@ -25,9 +25,15 @@ const SignUp: React.FC = () => {
                 setMessage({ text: 'Sign-up successful!', type: 'success' });
                 setTimeout(() => router.push('/'), 2000);
             } else {
-                setMessage({ text: data.error || 'Sign Up failed', type: 'error' });
-                console.error('Sign Up failed:', data.error);
-                setTimeout(() => router.push('/'), 2000);
+                // setMessage({ text: data.error || 'Sign Up failed', type: 'error' });
+                // console.error('Sign Up failed:', data.error);
+                // setTimeout(() => router.push('/'), 2000);
+                
+                // Defensive error handling
+                const errorMessage = data?.error || data?.message || 'Sign Up failed';
+                setMessage({ text: errorMessage, type: 'error' });
+                console.error('Sign Up failed:', errorMessage);
+                // setTimeout(() => router.push('/'), 2000);
             }
         } catch (error) {
             console.error('An unexpected error occurred:', error);
