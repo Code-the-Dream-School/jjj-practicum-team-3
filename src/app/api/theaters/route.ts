@@ -24,8 +24,8 @@ export async function POST(request: Request) {
     if (
       !theater?.name ||
       !theater?.address ||
-      theater.capacity === undefined ||
-      theater.is_active === undefined
+      theater.latitude === undefined ||
+      theater.longitude === undefined
     ) {
       return new Response(
         JSON.stringify({
@@ -42,12 +42,12 @@ export async function POST(request: Request) {
       );
     }
 
-    if (!Number.isInteger(theater.capacity) || theater.capacity <= 0) {
-      return new Response(
-        JSON.stringify({ error: "Capacity must be a positive integer" }),
-        { headers: { "Content-Type": "application/json" }, status: 400 }
-      );
-    }
+ if (typeof theater.latitude !== "number" || typeof theater.longitude !== "number") {
+  return new Response(
+    JSON.stringify({ error: "Latitude and longitude must be numbers" }),
+    { headers: { "Content-Type": "application/json" }, status: 400 }
+  );
+}
     
     const { data, error } = await supabase
       .from("theaters")
@@ -55,8 +55,8 @@ export async function POST(request: Request) {
         {
           name: theater.name,
           address: theater.address,
-          capacity: theater.capacity,
-          is_active: theater.is_active,
+          latitude: theater.latitude,
+          longitude: theater.longitude,
         },
       ])
       .select()
