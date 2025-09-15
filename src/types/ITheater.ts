@@ -1,7 +1,7 @@
 import {ITheaterMovie} from "@/types/ITheaterMovie";
 
 export interface ITheater {
-    id: string;
+    id: number;
     name: string;
     latitude: number;
     longitude: number;
