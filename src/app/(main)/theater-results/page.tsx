@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { useSearchParams } from 'next/navigation';
+import FooterStrip from "@/components/shared/layout/FooterStrip";
 
 // Define the data structure with TypeScript interfaces for type safety.
 interface Showtime {
@@ -151,10 +152,10 @@ export default function TheaterResults() {
     const [selectedDate, setSelectedDate] = useState<string>('2025-08-20');
     const [movieFilter, setMovieFilter] = useState<string>('');
     // A placeholder for the selected theater ID. This would be passed via a route parameter or context in a real app.
-  //  const selectedTheaterId = "1";
+    //  const selectedTheaterId = "1";
 
     // Find the theater based on the ID
-  //  const theater = theaterData.find(t => t.id === selectedTheaterId);
+    //  const theater = theaterData.find(t => t.id === selectedTheaterId);
     const theater = theaterData.find(t => t.id === theaterId);
     // If the theater is not found, display a message.
     if (!theater) {
@@ -250,6 +251,7 @@ export default function TheaterResults() {
                     })}
                 </div>
             </main>
+            <FooterStrip />
         </div>
     );
 }

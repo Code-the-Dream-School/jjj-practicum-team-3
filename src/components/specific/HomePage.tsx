@@ -3,6 +3,7 @@ import {useEffect, useMemo, useRef, useState} from "react";
 import {movieData} from "@/data/movieData";
 import {theaterData} from "@/data/theaterData";
 import MovieSlider from "@/components/specific/MovieSlider";
+import FooterStrip from "@/components/shared/layout/FooterStrip";
 
 
 const HomePage = ({ isMapsLoaded }: { isMapsLoaded: boolean }) => {
@@ -111,9 +112,7 @@ const HomePage = ({ isMapsLoaded }: { isMapsLoaded: boolean }) => {
             <MovieSlider title="Movies" movies={regularMovies} />
             <MovieSlider title="Coming Soon" movies={comingSoonMovies} />
 
-            <div className="w-full mt-8 mb-8">
-                <img src="/footerStrip.png" alt="Footer strip" className="w-full h-auto object-cover rounded-xl shadow-lg"/>
-            </div>
+            <FooterStrip />
         </main>
     );
 };
