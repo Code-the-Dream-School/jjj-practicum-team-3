@@ -1,28 +1,14 @@
 import { create } from 'zustand';
-
-interface Movie {
-    Title: string;
-    Year: string;
-    Poster: string;
-    // Add other fields as needed
+import {IMovie} from "@/interfaces";
+interface MovieStoreState {
+    movies: IMovie[];
+    loading: boolean;
+    setMovies: (newMovies: IMovie[]) => void;
 }
-
-interface MovieStore {
-    movies: Movie[];
-    currentMovies: Movie[];
-    comingSoonMovies: Movie[];
-    setMovies: (movies: Movie[]) => void;
-}
-
-const useMovieStore = create<MovieStore>((set) => ({
+const useMovieStore = create<MovieStoreState>((set) => ({
     movies: [],
-    currentMovies: [],
-    comingSoonMovies: [],
-    setMovies: (movies) => set({
-        movies,
-        currentMovies: movies.filter((m) => parseInt(m.Year) < 2025),
-        comingSoonMovies: movies.filter((m) => parseInt(m.Year) >= 2025),
-    }),
+    loading: true,
+    setMovies: (newMovies) => set({movies: newMovies, loading: false}),
 }));
 
-export default useMovieStore;
+export {useMovieStore};

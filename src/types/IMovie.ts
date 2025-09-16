@@ -1,13 +1,13 @@
 export interface IMovie {
     id: string;
-    Title: string;
-    Year: string;
-    RunTime: string;
-    Genre: string;
-    Director: string;
-    Actors: string;
-    Description: string;
-    Country: string;
-    Poster: string;
-    ComingSoon: boolean;
+    title: string;
+    year: string;
+    runTime: string;
+    genre: string;
+    director: string;
+    actors: string;
+    description: string;
+    country: string;
+    poster: string;
+    comingSoon: boolean;
 }

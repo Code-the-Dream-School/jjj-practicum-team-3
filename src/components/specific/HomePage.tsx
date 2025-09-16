@@ -4,6 +4,8 @@ import {movieData} from "@/data/movieData";
 import {theaterData} from "@/data/theaterData";
 import MovieSlider from "@/components/specific/MovieSlider";
 import FooterStrip from "@/components/shared/layout/FooterStrip";
+import {IMovie} from "@/interfaces";
+import {getAllMovies} from "@/actions/movies";
 
 
 const HomePage = ({ isMapsLoaded }: { isMapsLoaded: boolean }) => {
@@ -11,8 +13,29 @@ const HomePage = ({ isMapsLoaded }: { isMapsLoaded: boolean }) => {
     const [theaterFilter, setTheaterFilter] = useState('');
     const [locationFilter, setLocationFilter] = useState('');
     const [showTheaterDropdown, setShowTheaterDropdown] = useState(false);
+    const [movies, setMovies] = useState<IMovie[]>([]);
+    const [loading, setLoading] = useState(true);
     const locationInputRef = useRef<HTMLInputElement>(null);
 
+    useEffect(() => {
+        const fetchMovies = async () => {
+            setLoading(true);
+            try {
+                const result = await getAllMovies();
+                if (result.success && result.data) {
+                    setMovies(result.data);
+                } else {
+                    console.error("Failed to fetch movies:", result.message);
+                }
+            } catch (error) {
+                console.error("An unexpected error occurred:", error);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchMovies();
+    }, []);
     useEffect(() => {
         if (!locationInputRef.current || !isMapsLoaded) {
             return;
@@ -50,8 +73,8 @@ const HomePage = ({ isMapsLoaded }: { isMapsLoaded: boolean }) => {
     }, [theaterFilter]);
 
     const filteredMovies = useMemo(() => {
-        return movieData.movies.filter(movie =>
-            movie.Title.toLowerCase().includes(movieFilter.toLowerCase())
+        return movies.filter(movie =>
+            movie.title.toLowerCase().includes(movieFilter.toLowerCase())
         );
     }, [movieFilter]);
 
@@ -64,8 +87,13 @@ const HomePage = ({ isMapsLoaded }: { isMapsLoaded: boolean }) => {
         );
     }, [theaterFilter]);
 
-    const comingSoonMovies = filteredMovies.filter(movie => movie.ComingSoon);
-    const regularMovies = filteredMovies.filter(movie => !movie.ComingSoon);
+    const comingSoonMovies = useMemo(() => {
+        return movies.filter(movie => movie.comingsoon && movie.title.toLowerCase().includes(movieFilter.toLowerCase()));
+    }, [movies, movieFilter]);
+    const regularMovies = useMemo(() => {
+        return movies.filter(movie => !movie.comingsoon && movie.title.toLowerCase().includes(movieFilter.toLowerCase()));
+    }, [movies, movieFilter]);
+
 
     return (
         <main className="flex-grow container mx-auto px-4 py-0">
@@ -109,9 +137,14 @@ const HomePage = ({ isMapsLoaded }: { isMapsLoaded: boolean }) => {
                 </div>
             </div>
 
-            <MovieSlider title="Movies" movies={regularMovies} />
-            <MovieSlider title="Coming Soon" movies={comingSoonMovies} />
-
+            {loading ? (
+                <div className="text-center py-10 text-white">Loading movies...</div>
+            ) : (
+                <>
+                    <MovieSlider title="Movies" movies={regularMovies}/>
+                    <MovieSlider title="Coming Soon" movies={comingSoonMovies}/>
+                </>
+            )}
             <FooterStrip />
         </main>
     );

@@ -8,14 +8,14 @@ export const AddShowtimes = async (show: Partial<IShowtimes>) => {
 		.from("showtimes")
 		.insert(show)
 		.select('*')
-		
+
 		if (error) {
             return {
-                success: false, 
+                success: false,
                 message: error.message,
              }
 		}
-		
+
 		return{
 			success: true,
 			message: 'Showtime added successfully',
@@ -27,14 +27,14 @@ export const updateShowtimes = async (id:string, show: Partial<IShowtimes>) => {
 		.from('showtimes')
 		.update(show)
 		.eq('id', id)
-		
+
 		if (error) {
             return {
-                success: false, 
+                success: false,
                 message: error.message,
              }
 		}
-		
+
 		return{
 			success: true,
 			message: 'Showtime updated successfully',
@@ -49,8 +49,8 @@ export const deleteShowtimes = async (id: string) => {
 
         if (error) {
             return {
-                success: false, 
-                message: error.message, 
+                success: false,
+                message: error.message,
             }
         }
 
@@ -66,14 +66,14 @@ export const getAllShowtimes = async () => {
 		.from('showtimes')
 		.select("*, movie:movies(*)") //add theatre: theatres(*) later
 		.order("created_at", { ascending: false});
-		
+
 		if (error) {
 		 return {
-            success: false, 
+            success: false,
             message: error.message,
          }
 		}
-		
+
 		return{
 			success: true,
 			message: "Showtime fetched successfully",
@@ -86,23 +86,43 @@ export const getShowtimesById = async (id: string) => {
 		.from('showtimes')
 		.select('*')
 		.eq("id", id)
-		
+
 		if (error) {
 		throw new Error(error.message)
 		}
-		
+
 		if(data.length === 0) {
 			return {
-				success: false, 
+				success: false,
 				message: "Showtime not found!"
 				}
 			}
-			
+
 		const showtime = data[0];
-		
+
 		return{
 			success: true,
 			message: "Showtime fetched successfully",
 			data: showtime as IShowtimes
 		};
 }
+export const getShowtimesByMovieId = async (movieId: string) => {
+	const { data, error } = await supabase
+		.from('showtimes')
+		.select("*, movie:movies(*)")
+		.eq('movie_id', movieId)
+		.order("created_at", { ascending: false });
+
+	if (error) {
+		return {
+			success: false,
+			message: error.message,
+		};
+	}
+
+	return {
+		success: true,
+		message: "Showtimes fetched successfully",
+		data: data as IShowtimes[],
+	};
+};
