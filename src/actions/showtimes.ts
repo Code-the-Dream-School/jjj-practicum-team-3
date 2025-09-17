@@ -106,3 +106,68 @@ export const getShowtimesById = async (id: string) => {
 			data: showtime as IShowtimes
 		};
 }
+
+export const getShowtimesByMovieId = async (movieId: string, dateFilter?: string) => {
+	try {
+	  // Step 1: fetch all the showtimes for the given movieId (optionally filter by date)
+	  let query = supabase
+		.from("showtimes")
+		.select("*, theater:theaters(*)")
+		.eq("movie_id", movieId);
+  
+	  if (dateFilter) {
+		query = query.eq("date", dateFilter);
+	  }
+  
+	  const { data: showtimes, error } = await query;
+  
+	  if (error) {
+		return {
+		  success: false,
+		  message: error.message,
+		};
+	  }
+  
+	   // Defensive check — ensure showtimes is not null/undefined
+	   if (!showtimes || showtimes.length === 0) {
+		return {
+		  success: true,
+		  message: "No showtimes found for this movie",
+		  data: [],
+		};
+	  }
+
+	  // Step 2: group the showtimes by theaterId
+	  const groupedData: any[] = [];
+	  const theaterIdsObject: Record<string, boolean> = {};
+  
+	  showtimes.forEach((show) => {
+		const theaterId = show.theater.id;
+  
+		if (theaterIdsObject[theaterId]) {
+		  const group = groupedData.find((g) => g.theater.id === theaterId);
+		  if (group) {
+			group.shows.push({ date: show.date, time: show.time });
+		  }
+		} else {
+		  theaterIdsObject[theaterId] = true;
+		  groupedData.push({
+			theater: show.theater,
+			shows: [{ date: show.date, time: show.time }],
+		  });
+		}
+	  });
+  
+	  // Step 3: return the grouped data
+	  return {
+		success: true,
+		message: "Shows fetched successfully",
+		data: groupedData,
+	  };
+	} catch (error) {
+	  return {
+		success: false,
+		message: "Failed to fetch showtimes for the movie",
+	  };
+	}
+  };

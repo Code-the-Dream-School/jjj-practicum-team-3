@@ -30,7 +30,7 @@ export interface IMovie {
 export interface IShowtimes {
 	id: string;
 	movie_id: string;
-	theatre_id: string;
+	theater_id: string;
 	date: string;
 	time: string;
 	ticket_price: number;
