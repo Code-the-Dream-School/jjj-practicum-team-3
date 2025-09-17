@@ -128,6 +128,15 @@ export const getShowtimesByMovieId = async (movieId: string, dateFilter?: string
 		};
 	  }
   
+	   // Defensive check — ensure showtimes is not null/undefined
+	   if (!showtimes || showtimes.length === 0) {
+		return {
+		  success: true,
+		  message: "No showtimes found for this movie",
+		  data: [],
+		};
+	  }
+
 	  // Step 2: group the showtimes by theaterId
 	  const groupedData: any[] = [];
 	  const theaterIdsObject: Record<string, boolean> = {};
@@ -136,8 +145,10 @@ export const getShowtimesByMovieId = async (movieId: string, dateFilter?: string
 		const theaterId = show.theater.id;
   
 		if (theaterIdsObject[theaterId]) {
-		  const group = groupedData.find(g => g.theater.id === theaterId);
-		  group.shows.push({ date: show.date, time: show.time });
+		  const group = groupedData.find((g) => g.theater.id === theaterId);
+		  if (group) {
+			group.shows.push({ date: show.date, time: show.time });
+		  }
 		} else {
 		  theaterIdsObject[theaterId] = true;
 		  groupedData.push({
