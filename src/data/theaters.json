@@ -1,0 +1,6547 @@
+[
+  {
+    "id": "1",
+    "name": "Grandview Theater",
+    "latitude": 34.0522,
+    "longitude": -118.2437,
+    "address": "123 Main Street, Anytown, CA 12345",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Downtown Cinema",
+    "latitude": 40.7128,
+    "longitude": -74.0060,
+    "address": "456 Oak Avenue, Metropolis, NY 10001",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Northside Drive-In",
+    "latitude": 41.8781,
+    "longitude": -87.6298,
+    "address": "789 Pine Boulevard, Bigtown, IL 60601",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "The Reel",
+    "latitude": 29.7604,
+    "longitude": -95.3698,
+    "address": "101 Maple Lane, Cityville, TX 77001",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Movie Palace",
+    "latitude": 33.4484,
+    "longitude": -112.0740,
+    "address": "222 Birch Road, Westford, AZ 85001",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Starlight Cinemas",
+    "latitude": 39.951012,
+    "longitude": -75.165225,
+    "address": "333 Cedar Street, Eastville, PA 19101",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "Majestic Theater",
+    "latitude": 29.4241,
+    "longitude": -98.4936,
+    "address": "444 Elm Circle, Southbend, TX 78201",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "Bayfront Cineplex",
+    "latitude": 32.7157,
+    "longitude": -117.1611,
+    "address": "555 Spruce Drive, Seaside, CA 92101",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "name": "Lone Star Screen",
+    "latitude": 32.7767,
+    "longitude": -96.7970,
+    "address": "666 Willow Way, Riverton, TX 75201",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "name": "Valley View Theater",
+    "latitude": 37.3382,
+    "longitude": -121.8863,
+    "address": "777 Aspen Court, Hillside, CA 95101",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "name": "Capitol Theater",
+    "latitude": 30.2672,
+    "longitude": -97.7431,
+    "address": "888 Poplar Boulevard, Riverwalk, TX 78701",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "name": "Palm Screen",
+    "latitude": 30.3322,
+    "longitude": -81.6557,
+    "address": "999 Hemlock Road, Ocean City, FL 32201",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "name": "Cowtown Cinemas",
+    "latitude": 32.7555,
+    "longitude": -97.3308,
+    "address": "111 Pine Street, Fort Bend, TX 76101",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "name": "Buckeye Theater",
+    "latitude": 39.9612,
+    "longitude": -82.9988,
+    "address": "222 Oak Street, Columbus, OH 43201",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "15",
+    "name": "Queen City Cineplex",
+    "latitude": 35.2271,
+    "longitude": -80.8431,
+    "address": "333 Maple Street, Charlotte, NC 28201",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "16",
+    "name": "Golden Gate Screen",
+    "latitude": 37.7749,
+    "longitude": -122.4194,
+    "address": "444 Cherry Street, San Francisco, CA 94101",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "17",
+    "name": "Hoosier Theater",
+    "latitude": 39.7684,
+    "longitude": -86.1581,
+    "address": "555 Cedar Street, Circle City, IN 46201",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "18",
+    "name": "Emerald City Cinema",
+    "latitude": 47.6062,
+    "longitude": -122.3321,
+    "address": "666 Elm Street, Seattle, WA 98101",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "19",
+    "name": "Mile High Movies",
+    "latitude": 39.7392,
+    "longitude": -104.9903,
+    "address": "777 Fir Street, Mountainview, CO 80201",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "20",
+    "name": "Capital City Cinema",
+    "latitude": 38.9072,
+    "longitude": -77.0369,
+    "address": "888 Walnut Street, Capitol City, DC 20001",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "21",
+    "name": "Freedom Screen",
+    "latitude": 42.3601,
+    "longitude": -71.0589,
+    "address": "999 Willow Street, Patriot Town, MA 02101",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "name": "Music City Movies",
+    "latitude": 36.1627,
+    "longitude": -86.7816,
+    "address": "100 Aspen Street, Nashville, TN 37201",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "name": "Bluff City Film",
+    "latitude": 35.1495,
+    "longitude": -90.0490,
+    "address": "101 Poplar Street, Memphis, TN 38101",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "24",
+    "name": "Rose City Theater",
+    "latitude": 45.5051,
+    "longitude": -122.6750,
+    "address": "102 Spruce Street, Portland, OR 97201",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "25",
+    "name": "Boomer Movie House",
+    "latitude": 35.4676,
+    "longitude": -97.5164,
+    "address": "103 Cedar Street, Oklahoma City, OK 73101",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "26",
+    "name": "Neon Screen",
+    "latitude": 36.1699,
+    "longitude": -115.1398,
+    "address": "104 Elm Street, Las Vegas, NV 89101",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "27",
+    "name": "Inner Harbor Cinemas",
+    "latitude": 39.2904,
+    "longitude": -76.6122,
+    "address": "105 Fir Street, Baltimore, MD 21201",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "28",
+    "name": "Falls City Theater",
+    "latitude": 38.2527,
+    "longitude": -85.7585,
+    "address": "106 Walnut Street, Louisville, KY 40201",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "29",
+    "name": "Cream City Pictures",
+    "latitude": 43.0389,
+    "longitude": -87.9065,
+    "address": "107 Willow Street, Milwaukee, WI 53201",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "30",
+    "name": "Duke City Drive-In",
+    "latitude": 35.0844,
+    "longitude": -106.6504,
+    "address": "108 Aspen Street, Albuquerque, NM 87101",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "31",
+    "name": "Old Pueblo Pictures",
+    "latitude": 32.2217,
+    "longitude": -110.9265,
+    "address": "109 Poplar Street, Tucson, AZ 85701",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "32",
+    "name": "Fresno Flicks",
+    "latitude": 36.7378,
+    "longitude": -119.7871,
+    "address": "110 Spruce Street, Fresno, CA 93650",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "33",
+    "name": "Capital Cinema",
+    "latitude": 38.5816,
+    "longitude": -121.4944,
+    "address": "111 Cedar Street, Sacramento, CA 95814",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "34",
+    "name": "Heartland Theater",
+    "latitude": 39.0997,
+    "longitude": -94.5786,
+    "address": "112 Elm Street, Kansas City, MO 64101",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "35",
+    "name": "Pacific Picture House",
+    "latitude": 33.7701,
+    "longitude": -118.1937,
+    "address": "113 Fir Street, Long Beach, CA 90801",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "36",
+    "name": "Sun Devil Screen",
+    "latitude": 33.4152,
+    "longitude": -111.8315,
+    "address": "114 Walnut Street, Mesa, AZ 85201",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "37",
+    "name": "Peachtree Theater",
+    "latitude": 33.7490,
+    "longitude": -84.3880,
+    "address": "115 Willow Street, Atlanta, GA 30301",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "38",
+    "name": "Rocky Mountain Flicks",
+    "latitude": 38.8339,
+    "longitude": -104.8214,
+    "address": "116 Aspen Street, Colorado Springs, CO 80901",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "39",
+    "name": "Omaha Screen",
+    "latitude": 41.2565,
+    "longitude": -95.9345,
+    "address": "117 Poplar Street, Omaha, NE 68101",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "40",
+    "name": "The Oak City Cineplex",
+    "latitude": 35.7796,
+    "longitude": -78.6382,
+    "address": "118 Spruce Street, Raleigh, NC 27601",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "41",
+    "name": "Magic City Movies",
+    "latitude": 25.7617,
+    "longitude": -80.1918,
+    "address": "119 Cedar Street, Miami, FL 33101",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "42",
+    "name": "Seaside Theater",
+    "latitude": 36.8529,
+    "longitude": -75.9780,
+    "address": "120 Elm Street, Virginia Beach, VA 23451",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "43",
+    "name": "Golden City Cinemas",
+    "latitude": 37.8044,
+    "longitude": -122.2712,
+    "address": "121 Fir Street, Oakland, CA 94601",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "44",
+    "name": "Twin Cities Film",
+    "latitude": 44.9778,
+    "longitude": -93.2650,
+    "address": "122 Walnut Street, Minneapolis, MN 55401",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "45",
+    "name": "Green Country Theater",
+    "latitude": 36.1540,
+    "longitude": -95.9928,
+    "address": "123 Willow Street, Tulsa, OK 74101",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "46",
+    "name": "Air Capital Cinema",
+    "latitude": 37.6872,
+    "longitude": -97.3301,
+    "address": "124 Aspen Street, Wichita, KS 67201",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "47",
+    "name": "Crescent City Movies",
+    "latitude": 29.9511,
+    "longitude": -90.0715,
+    "address": "125 Poplar Street, New Orleans, LA 70101",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "48",
+    "name": "The Cleve Screen",
+    "latitude": 41.4993,
+    "longitude": -81.6944,
+    "address": "126 Spruce Street, Cleveland, OH 44101",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "49",
+    "name": "Bakersfield Cineplex",
+    "latitude": 35.3733,
+    "longitude": -119.0187,
+    "address": "127 Cedar Street, Bakersfield, CA 93301",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "50",
+    "name": "Tampa Theater",
+    "latitude": 27.9642,
+    "longitude": -82.4589,
+    "address": "128 Elm Street, Tampa, FL 33601",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "51",
+    "name": "Aloha Flicks",
+    "latitude": 21.3069,
+    "longitude": -157.8583,
+    "address": "129 Fir Street, Honolulu, HI 96801",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "52",
+    "name": "Anaheim Screens",
+    "latitude": 33.8366,
+    "longitude": -117.9143,
+    "address": "130 Walnut Street, Anaheim, CA 92801",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "53",
+    "name": "Gateway Cinema",
+    "latitude": 38.6270,
+    "longitude": -90.1994,
+    "address": "131 Willow Street, St. Louis, MO 63101",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "54",
+    "name": "Mission Movies",
+    "latitude": 33.9533,
+    "longitude": -117.3962,
+    "address": "132 Aspen Street, Riverside, CA 92501",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "55",
+    "name": "Steel City Cinema",
+    "latitude": 40.4406,
+    "longitude": -79.9959,
+    "address": "133 Poplar Street, Pittsburgh, PA 15201",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "56",
+    "name": "The 'Nati Theater",
+    "latitude": 39.1031,
+    "longitude": -84.5120,
+    "address": "134 Spruce Street, Cincinnati, OH 45201",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "57",
+    "name": "Last Frontier Flicks",
+    "latitude": 61.2181,
+    "longitude": -149.9003,
+    "address": "135 Cedar Street, Anchorage, AK 99501",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "58",
+    "name": "Glass City Theater",
+    "latitude": 41.6639,
+    "longitude": -83.5552,
+    "address": "136 Elm Street, Toledo, OH 43601",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "59",
+    "name": "Brick City Film",
+    "latitude": 40.7357,
+    "longitude": -74.1724,
+    "address": "137 Fir Street, Newark, NJ 07101",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "60",
+    "name": "Niagara Screen",
+    "latitude": 42.8864,
+    "longitude": -78.8784,
+    "address": "138 Walnut Street, Buffalo, NY 14201",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "61",
+    "name": "Plano Picture House",
+    "latitude": 33.0198,
+    "longitude": -96.6989,
+    "address": "139 Willow Street, Plano, TX 75023",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "62",
+    "name": "Cornhusker Cineplex",
+    "latitude": 40.8136,
+    "longitude": -96.7026,
+    "address": "140 Aspen Street, Lincoln, NE 68501",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "63",
+    "name": "Norfolk Theater",
+    "latitude": 36.8508,
+    "longitude": -76.2859,
+    "address": "141 Poplar Street, Norfolk, VA 23501",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "64",
+    "name": "Vegas Movie House",
+    "latitude": 36.0396,
+    "longitude": -114.9810,
+    "address": "142 Spruce Street, Henderson, NV 89002",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "65",
+    "name": "Richmond Screen",
+    "latitude": 37.5407,
+    "longitude": -77.4360,
+    "address": "143 Cedar Street, Richmond, VA 23219",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "66",
+    "name": "Desert Movies",
+    "latitude": 33.4942,
+    "longitude": -111.9261,
+    "address": "144 Elm Street, Scottsdale, AZ 85251",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "67",
+    "name": "Orlando Cineplex",
+    "latitude": 28.5383,
+    "longitude": -81.3792,
+    "address": "145 Fir Street, Orlando, FL 32801",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "68",
+    "name": "Treasure Valley Screen",
+    "latitude": 43.6150,
+    "longitude": -116.2023,
+    "address": "146 Walnut Street, Boise, ID 83701",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "69",
+    "name": "Tacoma Theater",
+    "latitude": 47.2529,
+    "longitude": -122.4443,
+    "address": "147 Willow Street, Tacoma, WA 98401",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "70",
+    "name": "Fremont Flicks",
+    "latitude": 37.5485,
+    "longitude": -121.9886,
+    "address": "148 Aspen Street, Fremont, CA 94536",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "71",
+    "name": "Spokane Screen",
+    "latitude": 47.6588,
+    "longitude": -117.4260,
+    "address": "149 Poplar Street, Spokane, WA 99201",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "72",
+    "name": "Grand Rapids Cinema",
+    "latitude": 42.9634,
+    "longitude": -85.6681,
+    "address": "150 Spruce Street, Grand Rapids, MI 49501",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "73",
+    "name": "Chattanooga Flicks",
+    "latitude": 35.0456,
+    "longitude": -85.3097,
+    "address": "151 Cedar Street, Chattanooga, TN 37401",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "74",
+    "name": "Huntsville Movies",
+    "latitude": 34.7304,
+    "longitude": -86.5861,
+    "address": "152 Elm Street, Huntsville, AL 35801",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "75",
+    "name": "Mobile Cineplex",
+    "latitude": 30.6954,
+    "longitude": -88.0399,
+    "address": "153 Fir Street, Mobile, AL 36601",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "76",
+    "name": "Montgomery Theater",
+    "latitude": 32.3668,
+    "longitude": -86.3006,
+    "address": "154 Walnut Street, Montgomery, AL 36101",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "77",
+    "name": "Magic City Screen",
+    "latitude": 33.5207,
+    "longitude": -86.8025,
+    "address": "155 Willow Street, Birmingham, AL 35201",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "78",
+    "name": "Fayetteville Movies",
+    "latitude": 36.0626,
+    "longitude": -94.1574,
+    "address": "156 Aspen Street, Fayetteville, AR 72701",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "79",
+    "name": "Little Rock Cinema",
+    "latitude": 34.7465,
+    "longitude": -92.2896,
+    "address": "157 Poplar Street, Little Rock, AR 72201",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "80",
+    "name": "Fort Smith Flicks",
+    "latitude": 35.3853,
+    "longitude": -94.3980,
+    "address": "158 Spruce Street, Fort Smith, AR 72901",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "81",
+    "name": "Rogers Cineplex",
+    "latitude": 36.3312,
+    "longitude": -94.1166,
+    "address": "159 Cedar Street, Rogers, AR 72756",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "82",
+    "name": "Springdale Movies",
+    "latitude": 36.1856,
+    "longitude": -94.1294,
+    "address": "160 Elm Street, Springdale, AR 72764",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "83",
+    "name": "Anaheim Screens",
+    "latitude": 33.8366,
+    "longitude": -117.9143,
+    "address": "161 Fir Street, Anaheim, CA 92801",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "84",
+    "name": "Gateway Cinema",
+    "latitude": 38.6270,
+    "longitude": -90.1994,
+    "address": "162 Walnut Street, St. Louis, MO 63101",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "85",
+    "name": "Mission Movies",
+    "latitude": 33.9533,
+    "longitude": -117.3962,
+    "address": "163 Willow Street, Riverside, CA 92501",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "86",
+    "name": "Steel City Cinema",
+    "latitude": 40.4406,
+    "longitude": -79.9959,
+    "address": "164 Aspen Street, Pittsburgh, PA 15201",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "87",
+    "name": "The 'Nati Theater",
+    "latitude": 39.1031,
+    "longitude": -84.5120,
+    "address": "165 Poplar Street, Cincinnati, OH 45201",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "88",
+    "name": "Last Frontier Flicks",
+    "latitude": 61.2181,
+    "longitude": -149.9003,
+    "address": "166 Spruce Street, Anchorage, AK 99501",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "89",
+    "name": "Glass City Theater",
+    "latitude": 41.6639,
+    "longitude": -83.5552,
+    "address": "167 Cedar Street, Toledo, OH 43601",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "90",
+    "name": "Brick City Film",
+    "latitude": 40.7357,
+    "longitude": -74.1724,
+    "address": "168 Elm Street, Newark, NJ 07101",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "91",
+    "name": "Niagara Screen",
+    "latitude": 42.8864,
+    "longitude": -78.8784,
+    "address": "169 Fir Street, Buffalo, NY 14201",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "92",
+    "name": "Plano Picture House",
+    "latitude": 33.0198,
+    "longitude": -96.6989,
+    "address": "170 Walnut Street, Plano, TX 75023",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "93",
+    "name": "Cornhusker Cineplex",
+    "latitude": 40.8136,
+    "longitude": -96.7026,
+    "address": "171 Willow Street, Lincoln, NE 68501",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "94",
+    "name": "Norfolk Theater",
+    "latitude": 36.8508,
+    "longitude": -76.2859,
+    "address": "172 Aspen Street, Norfolk, VA 23501",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "95",
+    "name": "Vegas Movie House",
+    "latitude": 36.0396,
+    "longitude": -114.9810,
+    "address": "173 Poplar Street, Henderson, NV 89002",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "96",
+    "name": "Richmond Screen",
+    "latitude": 37.5407,
+    "longitude": -77.4360,
+    "address": "174 Spruce Street, Richmond, VA 23219",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "97",
+    "name": "Desert Movies",
+    "latitude": 33.4942,
+    "longitude": -111.9261,
+    "address": "175 Cedar Street, Scottsdale, AZ 85251",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "98",
+    "name": "Orlando Cineplex",
+    "latitude": 28.5383,
+    "longitude": -81.3792,
+    "address": "176 Elm Street, Orlando, FL 32801",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "99",
+    "name": "Treasure Valley Screen",
+    "latitude": 43.6150,
+    "longitude": -116.2023,
+    "address": "177 Fir Street, Boise, ID 83701",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "100",
+    "name": "Tacoma Theater",
+    "latitude": 47.2529,
+    "longitude": -122.4443,
+    "address": "178 Walnut Street, Tacoma, WA 98401",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "101",
+    "name": "Fremont Flicks",
+    "latitude": 37.5485,
+    "longitude": -121.9886,
+    "address": "179 Willow Street, Fremont, CA 94536",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "102",
+    "name": "Spokane Screen",
+    "latitude": 47.6588,
+    "longitude": -117.4260,
+    "address": "180 Aspen Street, Spokane, WA 99201",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "103",
+    "name": "Grand Rapids Cinema",
+    "latitude": 42.9634,
+    "longitude": -85.6681,
+    "address": "181 Poplar Street, Grand Rapids, MI 49501",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "104",
+    "name": "Chattanooga Flicks",
+    "latitude": 35.0456,
+    "longitude": -85.3097,
+    "address": "182 Spruce Street, Chattanooga, TN 37401",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "105",
+    "name": "Huntsville Movies",
+    "latitude": 34.7304,
+    "longitude": -86.5861,
+    "address": "183 Cedar Street, Huntsville, AL 35801",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "106",
+    "name": "Mobile Cineplex",
+    "latitude": 30.6954,
+    "longitude": -88.0399,
+    "address": "184 Elm Street, Mobile, AL 36601",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "107",
+    "name": "Montgomery Theater",
+    "latitude": 32.3668,
+    "longitude": -86.3006,
+    "address": "185 Fir Street, Montgomery, AL 36101",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "108",
+    "name": "Magic City Screen",
+    "latitude": 33.5207,
+    "longitude": -86.8025,
+    "address": "186 Walnut Street, Birmingham, AL 35201",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "109",
+    "name": "Fayetteville Movies",
+    "latitude": 36.0626,
+    "longitude": -94.1574,
+    "address": "187 Willow Street, Fayetteville, AR 72701",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "110",
+    "name": "Little Rock Cinema",
+    "latitude": 34.7465,
+    "longitude": -92.2896,
+    "address": "188 Aspen Street, Little Rock, AR 72201",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "111",
+    "name": "Fort Smith Flicks",
+    "latitude": 35.3853,
+    "longitude": -94.3980,
+    "address": "189 Poplar Street, Fort Smith, AR 72901",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "112",
+    "name": "Rogers Cineplex",
+    "latitude": 36.3312,
+    "longitude": -94.1166,
+    "address": "190 Spruce Street, Rogers, AR 72756",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "113",
+    "name": "Springdale Movies",
+    "latitude": 36.1856,
+    "longitude": -94.1294,
+    "address": "191 Cedar Street, Springdale, AR 72764",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "114",
+    "name": "Los Angeles Cineplex",
+    "latitude": 34.0522,
+    "longitude": -118.2437,
+    "address": "192 Elm Street, Los Angeles, CA 90001",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "115",
+    "name": "New York Theater",
+    "latitude": 40.7128,
+    "longitude": -74.0060,
+    "address": "193 Fir Street, New York, NY 10001",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "116",
+    "name": "Chicago Cinema",
+    "latitude": 41.8781,
+    "longitude": -87.6298,
+    "address": "194 Walnut Street, Chicago, IL 60601",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "117",
+    "name": "Houston Theater",
+    "latitude": 29.7604,
+    "longitude": -95.3698,
+    "address": "195 Willow Street, Houston, TX 77001",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "118",
+    "name": "Phoenix Cineplex",
+    "latitude": 33.4484,
+    "longitude": -112.0740,
+    "address": "196 Aspen Street, Phoenix, AZ 85001",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "119",
+    "name": "Philadelphia Theater",
+    "latitude": 39.951012,
+    "longitude": -75.165225,
+    "address": "197 Poplar Street, Philadelphia, PA 19101",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "120",
+    "name": "San Antonio Cinema",
+    "latitude": 29.4241,
+    "longitude": -98.4936,
+    "address": "198 Spruce Street, San Antonio, TX 78201",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "121",
+    "name": "San Diego Theater",
+    "latitude": 32.7157,
+    "longitude": -117.1611,
+    "address": "199 Cedar Street, San Diego, CA 92101",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "122",
+    "name": "Dallas Cineplex",
+    "latitude": 32.7767,
+    "longitude": -96.7970,
+    "address": "200 Elm Street, Dallas, TX 75201",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "123",
+    "name": "Northside Drive-In",
+    "latitude": 41.8781,
+    "longitude": -87.6298,
+    "address": "789 Pine Boulevard, Bigtown, IL 60601",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "124",
+    "name": "The Reel",
+    "latitude": 29.7604,
+    "longitude": -95.3698,
+    "address": "101 Maple Lane, Cityville, TX 77001",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "125",
+    "name": "Movie Palace",
+    "latitude": 33.4484,
+    "longitude": -112.0740,
+    "address": "222 Birch Road, Westford, AZ 85001",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "126",
+    "name": "Starlight Cinemas",
+    "latitude": 39.951012,
+    "longitude": -75.165225,
+    "address": "333 Cedar Street, Eastville, PA 19101",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "127",
+    "name": "Majestic Theater",
+    "latitude": 29.4241,
+    "longitude": -98.4936,
+    "address": "444 Elm Circle, Southbend, TX 78201",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "128",
+    "name": "Bayfront Cineplex",
+    "latitude": 32.7157,
+    "longitude": -117.1611,
+    "address": "555 Spruce Drive, Seaside, CA 92101",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "129",
+    "name": "Lone Star Screen",
+    "latitude": 32.7767,
+    "longitude": -96.7970,
+    "address": "666 Willow Way, Riverton, TX 75201",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "130",
+    "name": "Valley View Theater",
+    "latitude": 37.3382,
+    "longitude": -121.8863,
+    "address": "777 Aspen Court, Hillside, CA 95101",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "131",
+    "name": "Capitol Theater",
+    "latitude": 30.2672,
+    "longitude": -97.7431,
+    "address": "888 Poplar Boulevard, Riverwalk, TX 78701",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "132",
+    "name": "Palm Screen",
+    "latitude": 30.3322,
+    "longitude": -81.6557,
+    "address": "999 Hemlock Road, Ocean City, FL 32201",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "133",
+    "name": "Cowtown Cinemas",
+    "latitude": 32.7555,
+    "longitude": -97.3308,
+    "address": "111 Pine Street, Fort Bend, TX 76101",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "134",
+    "name": "Buckeye Theater",
+    "latitude": 39.9612,
+    "longitude": -82.9988,
+    "address": "222 Oak Street, Columbus, OH 43201",
+    "movies": [
+      {
+        "title": "Nobody 2",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+          }
+        ]
+      },
+      {
+        "title": "Weapons",
+        "showtimes": [
+          {
+            "date": "2025-08-20",
+            "times": [ "11:30 AM", "2:45 PM" ]
+          },
+          {
+            "date": "2025-08-21",
+            "times": [ "12:00 PM", "3:15 PM", "6:30" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "135",
+        "name": "Queen City Cineplex",
+        "latitude": 35.2271,
+        "longitude": -80.8431,
+        "address": "333 Maple Street, Charlotte, NC 28201",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "136",
+        "name": "Golden Gate Screen",
+        "latitude": 37.7749,
+        "longitude": -122.4194,
+        "address": "444 Cherry Street, San Francisco, CA 94101",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "137",
+        "name": "Hoosier Theater",
+        "latitude": 39.7684,
+        "longitude": -86.1581,
+        "address": "555 Cedar Street, Circle City, IN 46201",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "138",
+        "name": "Emerald City Cinema",
+        "latitude": 47.6062,
+        "longitude": -122.3321,
+        "address": "666 Elm Street, Seattle, WA 98101",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "139",
+        "name": "Mile High Movies",
+        "latitude": 39.7392,
+        "longitude": -104.9903,
+        "address": "777 Fir Street, Mountainview, CO 80201",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "140",
+        "name": "Capital City Cinema",
+        "latitude": 38.9072,
+        "longitude": -77.0369,
+        "address": "888 Walnut Street, Capitol City, DC 20001",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "141",
+        "name": "Freedom Screen",
+        "latitude": 42.3601,
+        "longitude": -71.0589,
+        "address": "999 Willow Street, Patriot Town, MA 02101",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "142",
+        "name": "Music City Movies",
+        "latitude": 36.1627,
+        "longitude": -86.7816,
+        "address": "100 Aspen Street, Nashville, TN 37201",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "143",
+        "name": "Bluff City Film",
+        "latitude": 35.1495,
+        "longitude": -90.0490,
+        "address": "101 Poplar Street, Memphis, TN 38101",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "144",
+        "name": "Rose City Theater",
+        "latitude": 45.5051,
+        "longitude": -122.6750,
+        "address": "102 Spruce Street, Portland, OR 97201",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "145",
+        "name": "Boomer Movie House",
+        "latitude": 35.4676,
+        "longitude": -97.5164,
+        "address": "103 Cedar Street, Oklahoma City, OK 73101",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "146",
+        "name": "Neon Screen",
+        "latitude": 36.1699,
+        "longitude": -115.1398,
+        "address": "104 Elm Street, Las Vegas, NV 89101",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "147",
+        "name": "Inner Harbor Cinemas",
+        "latitude": 39.2904,
+        "longitude": -76.6122,
+        "address": "105 Fir Street, Baltimore, MD 21201",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "148",
+        "name": "Falls City Theater",
+        "latitude": 38.2527,
+        "longitude": -85.7585,
+        "address": "106 Walnut Street, Louisville, KY 40201",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "149",
+        "name": "Cream City Pictures",
+        "latitude": 43.0389,
+        "longitude": -87.9065,
+        "address": "107 Willow Street, Milwaukee, WI 53201",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "150",
+        "name": "Duke City Drive-In",
+        "latitude": 35.0844,
+        "longitude": -106.6504,
+        "address": "108 Aspen Street, Albuquerque, NM 87101",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "151",
+        "name": "Old Pueblo Pictures",
+        "latitude": 32.2217,
+        "longitude": -110.9265,
+        "address": "109 Poplar Street, Tucson, AZ 85701",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "152",
+        "name": "Fresno Flicks",
+        "latitude": 36.7378,
+        "longitude": -119.7871,
+        "address": "110 Spruce Street, Fresno, CA 93650",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "153",
+        "name": "Capital Cinema",
+        "latitude": 38.5816,
+        "longitude": -121.4944,
+        "address": "111 Cedar Street, Sacramento, CA 95814",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "154",
+        "name": "Heartland Theater",
+        "latitude": 39.0997,
+        "longitude": -94.5786,
+        "address": "112 Elm Street, Kansas City, MO 64101",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "155",
+        "name": "Pacific Picture House",
+        "latitude": 33.7701,
+        "longitude": -118.1937,
+        "address": "113 Fir Street, Long Beach, CA 90801",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "156",
+        "name": "Sun Devil Screen",
+        "latitude": 33.4152,
+        "longitude": -111.8315,
+        "address": "114 Walnut Street, Mesa, AZ 85201",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "157",
+        "name": "Peachtree Theater",
+        "latitude": 33.7490,
+        "longitude": -84.3880,
+        "address": "115 Willow Street, Atlanta, GA 30301",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "158",
+        "name": "Rocky Mountain Flicks",
+        "latitude": 38.8339,
+        "longitude": -104.8214,
+        "address": "116 Aspen Street, Colorado Springs, CO 80901",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "159",
+        "name": "Omaha Screen",
+        "latitude": 41.2565,
+        "longitude": -95.9345,
+        "address": "117 Poplar Street, Omaha, NE 68101",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "160",
+        "name": "The Oak City Cineplex",
+        "latitude": 35.7796,
+        "longitude": -78.6382,
+        "address": "118 Spruce Street, Raleigh, NC 27601",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "161",
+        "name": "Magic City Movies",
+        "latitude": 25.7617,
+        "longitude": -80.1918,
+        "address": "119 Cedar Street, Miami, FL 33101",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "162",
+        "name": "Seaside Theater",
+        "latitude": 36.8529,
+        "longitude": -75.9780,
+        "address": "120 Elm Street, Virginia Beach, VA 23451",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "163",
+        "name": "Golden City Cinemas",
+        "latitude": 37.8044,
+        "longitude": -122.2712,
+        "address": "121 Fir Street, Oakland, CA 94601",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "164",
+        "name": "Twin Cities Film",
+        "latitude": 44.9778,
+        "longitude": -93.2650,
+        "address": "122 Walnut Street, Minneapolis, MN 55401",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "165",
+        "name": "Green Country Theater",
+        "latitude": 36.1540,
+        "longitude": -95.9928,
+        "address": "123 Willow Street, Tulsa, OK 74101",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "166",
+        "name": "Air Capital Cinema",
+        "latitude": 37.6872,
+        "longitude": -97.3301,
+        "address": "124 Aspen Street, Wichita, KS 67201",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "167",
+        "name": "Crescent City Movies",
+        "latitude": 29.9511,
+        "longitude": -90.0715,
+        "address": "125 Poplar Street, New Orleans, LA 70101",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "168",
+        "name": "The Cleve Screen",
+        "latitude": 41.4993,
+        "longitude": -81.6944,
+        "address": "126 Spruce Street, Cleveland, OH 44101",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "169",
+        "name": "Bakersfield Cineplex",
+        "latitude": 35.3733,
+        "longitude": -119.0187,
+        "address": "127 Cedar Street, Bakersfield, CA 93301",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "170",
+        "name": "Tampa Theater",
+        "latitude": 27.9642,
+        "longitude": -82.4589,
+        "address": "128 Elm Street, Tampa, FL 33601",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "171",
+        "name": "Aloha Flicks",
+        "latitude": 21.3069,
+        "longitude": -157.8583,
+        "address": "129 Fir Street, Honolulu, HI 96801",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "172",
+        "name": "Anaheim Screens",
+        "latitude": 33.8366,
+        "longitude": -117.9143,
+        "address": "130 Walnut Street, Anaheim, CA 92801",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "173",
+        "name": "Gateway Cinema",
+        "latitude": 38.6270,
+        "longitude": -90.1994,
+        "address": "131 Willow Street, St. Louis, MO 63101",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "174",
+        "name": "Mission Movies",
+        "latitude": 33.9533,
+        "longitude": -117.3962,
+        "address": "132 Aspen Street, Riverside, CA 92501",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "175",
+        "name": "Steel City Cinema",
+        "latitude": 40.4406,
+        "longitude": -79.9959,
+        "address": "133 Poplar Street, Pittsburgh, PA 15201",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "176",
+        "name": "The 'Nati Theater",
+        "latitude": 39.1031,
+        "longitude": -84.5120,
+        "address": "134 Spruce Street, Cincinnati, OH 45201",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "177",
+        "name": "Last Frontier Flicks",
+        "latitude": 61.2181,
+        "longitude": -149.9003,
+        "address": "135 Cedar Street, Anchorage, AK 99501",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "178",
+        "name": "Glass City Theater",
+        "latitude": 41.6639,
+        "longitude": -83.5552,
+        "address": "136 Elm Street, Toledo, OH 43601",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "179",
+        "name": "Brick City Film",
+        "latitude": 40.7357,
+        "longitude": -74.1724,
+        "address": "137 Fir Street, Newark, NJ 07101",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "180",
+        "name": "Niagara Screen",
+        "latitude": 42.8864,
+        "longitude": -78.8784,
+        "address": "138 Walnut Street, Buffalo, NY 14201",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "181",
+        "name": "Plano Picture House",
+        "latitude": 33.0198,
+        "longitude": -96.6989,
+        "address": "139 Willow Street, Plano, TX 75023",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "182",
+        "name": "Cornhusker Cineplex",
+        "latitude": 40.8136,
+        "longitude": -96.7026,
+        "address": "140 Aspen Street, Lincoln, NE 68501",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "183",
+        "name": "Norfolk Theater",
+        "latitude": 36.8508,
+        "longitude": -76.2859,
+        "address": "141 Poplar Street, Norfolk, VA 23501",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "184",
+        "name": "Vegas Movie House",
+        "latitude": 36.0396,
+        "longitude": -114.9810,
+        "address": "142 Spruce Street, Henderson, NV 89002",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "185",
+        "name": "Richmond Screen",
+        "latitude": 37.5407,
+        "longitude": -77.4360,
+        "address": "143 Cedar Street, Richmond, VA 23219",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "186",
+        "name": "Desert Movies",
+        "latitude": 33.4942,
+        "longitude": -111.9261,
+        "address": "144 Elm Street, Scottsdale, AZ 85251",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "187",
+        "name": "Orlando Cineplex",
+        "latitude": 28.5383,
+        "longitude": -81.3792,
+        "address": "145 Fir Street, Orlando, FL 32801",
+        "movies": [
+          {
+            "title": "Nobody 2",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "10:00 AM", "1:30 PM", "4:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "11:00 AM", "2:00 PM", "5:30 PM", "8:00 PM" ]
+              }
+            ]
+          },
+          {
+            "title": "Weapons",
+            "showtimes": [
+              {
+                "date": "2025-08-20",
+                "times": [ "11:30 AM", "2:45 PM" ]
+              },
+              {
+                "date": "2025-08-21",
+                "times": [ "12:00 PM", "3:15 PM", "6:30 PM" ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
