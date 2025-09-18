@@ -106,23 +106,4 @@ export const getShowtimesById = async (id: string) => {
 			data: showtime as IShowtimes
 		};
 }
-export const getShowtimesByMovieId = async (movieId: string) => {
-	const { data, error } = await supabase
-		.from('showtimes')
-		.select("*, movie:movies(*)")
-		.eq('movie_id', movieId)
-		.order("created_at", { ascending: false });
 
-	if (error) {
-		return {
-			success: false,
-			message: error.message,
-		};
-	}
-
-	return {
-		success: true,
-		message: "Showtimes fetched successfully",
-		data: data as IShowtimes[],
-	};
-};
