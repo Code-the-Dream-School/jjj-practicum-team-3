@@ -1,6 +1,7 @@
 import {useMemo} from "react";
 import {theaterData} from "@/data/theaterData";
 import {ITheaterWithDistance} from "@/types/ITheaterWithDistance";
+import FooterStrip from "@/components/shared/layout/FooterStrip";
 
 const calculateDistance = (lat1: number, lon1: number, lat2: number, lon2: number): number => {
     const R = 6371;
@@ -67,6 +68,7 @@ const TheatersByLocationPage = () => {
                     </div>
                 ))}
             </div>
+            <FooterStrip />
         </main>
     );
 };
