@@ -61,12 +61,11 @@ export async function POST(request: Request) {
       ])
       .select()
       .single();
-    return new Response(JSON.stringify(theater), {
+    return new Response(JSON.stringify(data), {
       headers: { "Content-Type": "application/json" },
       status: 201,
     });
   } catch (err) {
-    console.error("Unexpected error:", err);
     return new Response(JSON.stringify({ error: "Invalid request" }), {
       headers: { "Content-Type": "application/json" },
       status: 400,
