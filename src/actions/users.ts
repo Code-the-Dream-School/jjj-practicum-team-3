@@ -4,7 +4,7 @@ import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import supabase from "@/config/supabase-config";
 import { IUser } from "@/interfaces/index.js";
-
+import { cookies } from "next/headers";
 
 export const registerUser = async (payload : Partial<IUser>) => {
     const emailTrimmed = (payload.email || '').trim().toLowerCase();
@@ -62,6 +62,15 @@ try {
         { expiresIn: "1d" }
     );
 
+    // ✅ set cookie here
+const cookieStore = cookies();
+    (await cookieStore).set("jwt_token", jwtToken, {
+  httpOnly: true,
+  secure: process.env.NODE_ENV === "production",
+  path: "/",
+  maxAge: 60 * 60 * 24, // 1 day
+});
+
     return {
         success : true,
         message : "User registered successfully",
@@ -83,7 +92,6 @@ export const loginUser = async (payload: Partial<IUser>) => {
     const emailTrimmed = (payload.email || '').trim().toLowerCase();
     const passwordTrimmed = (payload.password || '').trim();
     
-
     // check if user exists
     const { data: existingUser, error: existingUserError } = await supabase
         .from("users")
@@ -99,15 +107,6 @@ export const loginUser = async (payload: Partial<IUser>) => {
             message: existingUserError?.message || "User not found",
         };
     }
-
-
-
-    // DEBUG: show what we are comparing
-// console.log("DB hash:", user.password);
-// console.log("Entered password:", passwordTrimmed);
-
-// console.log("Login attempt:", emailTrimmed, passwordTrimmed);
-// console.log("DB user:", existingUser);
 
 console.log("Login attempt:", emailTrimmed, "Stored hash:", existingUser.password);
     // compare password
@@ -139,9 +138,46 @@ console.log("Password valid?", isPasswordValid);
         { expiresIn: "1d" }
     );
 
+
     return {
         success: true,
         message: "User logged in successfully",
         data: jwtToken,
     };
+};
+
+export const getLoggedInUser = async () => {
+    try {
+        const cookiesStore = await cookies();
+        const jwtToken = cookiesStore.get("jwt_token")?.value;
+        const decodedData: any = jwt.verify(
+            jwtToken || "", 
+            process.env.JWT_SECRET!
+        );
+        const userId = decodedData.userId;
+
+        const { data : users, error} = await supabase
+            .from("users")
+            .select("*")
+            .eq("id", userId)
+        if(users?.length === 0 || error){
+            return {
+                success: false, 
+                message: "User not found",
+            };
+        }
+
+        const user = users[0];
+        delete user.password; //Remove password from user object
+        return {
+            success: true, 
+            message: "User data fetched successfully",
+            data: user,
+        }
+    } catch (error) {
+        return {
+            success: false, 
+            message: "Failed to get logged in user",
+        }
+    }
 };
