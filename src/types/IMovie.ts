@@ -4,10 +4,10 @@ export interface IMovie {
     year: string;
     runTime: string;
     genre: string;
-    director: string;
-    actors: string;
-    description: string;
-    country: string;
+    director?: string;
+    actors?: string;
+    description?: string;
+    country?: string;
     poster: string;
-    comingSoon: boolean;
+    comingsoon: boolean;
 }

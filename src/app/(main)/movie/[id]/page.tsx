@@ -1,10 +1,10 @@
 "use client";
-
 import CalendarStrip from "@/components/shared/layout/CalendarStrip";
 import Footer from "@/components/shared/layout/Footer";
 import React, { useState } from "react";
 
 /* PLACEHOLDER TYPE, WHEN API DONE, CHANGE */
+
 type Movie = {
     id: string;
     Title: string;
@@ -43,6 +43,8 @@ const movieData = {
     ]
 };
 
+
+
 const theaters = [
     {
         name: "Cinemark Century Mountain View 16",
@@ -55,13 +57,11 @@ const theaters = [
         times: ["2:00p", "4:00p", "6:00p"],
     },
 ];
-
 /* LOGIC OF PAGINATION, WHEN API DONE, CHANGE */
 type PageProps = { params: { id: string } };
 
 export default function MoviePage({ params }: PageProps) {
     const [movieFilter, setMovieFilter] = useState<string>("");
-
     const movie = movieData.movies.find((m) => m.id === params.id);
     if (!movie) {
         return (
@@ -76,7 +76,6 @@ export default function MoviePage({ params }: PageProps) {
             </main>
         );
     }
-
     /* LOGIC OF FILTRATION, WHEN API DONE, CHANGE */
     const filteredMovies = movieData.movies.filter((m) =>
         m.Title.toLowerCase().includes(movieFilter.toLowerCase())
@@ -97,7 +96,6 @@ export default function MoviePage({ params }: PageProps) {
                 />
                 <input type="text" placeholder="Theater" className="w-full md:w-1/3 bg-gray-700 text-gray-200 p-3 rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-2 focus:ring-blue-500"/>
             </div>
-
             {/* CALENDAR PLACEHOLDER, WHEN CALENDAR LAYOUT DONE, CHANGE */}
             <section className="mx-auto max-w-6xl">
                 <CalendarStrip
@@ -117,7 +115,6 @@ export default function MoviePage({ params }: PageProps) {
                             className="w-full h-full object-cover md:rounded-l-2xl md:rounded-tr-none"
                         />
                     </div>
-
                     {/* Info */}
                     <div className="p-6 md:p-8 flex-1 space-y-3">
                         <h1 className="text-2xl font-extrabold leading-tight">
@@ -130,15 +127,13 @@ export default function MoviePage({ params }: PageProps) {
                         </div>
                     </div>
                 </div>
-
                 {/* SHOWTIMES PLACEHOLDER, WHEN SHOWTIMES LAYOUT DONE, CHANGE */}
                 <div className="mb-4 flex items-center justify-between">
                     <h2 className="text-lg font-extrabold tracking-tight">Showtimes</h2>
                     <span className="rounded-full bg-[#e8eefc] px-3 py-1 text-xs font-extrabold text-[#0c1222]">
-      coming soon
-    </span>
+coming soon
+</span>
                 </div>
-
                 <div className="divide-y divide-[#2b3450]">
                     {theaters.map((t) => (
                         <div key={t.name} className="flex flex-col gap-3 py-4 md:grid md:grid-cols-[1fr,auto] md:items-start">
@@ -147,7 +142,6 @@ export default function MoviePage({ params }: PageProps) {
                                 <p className="m-0 text-base font-extrabold text-[#e7eaf3]">{t.name}</p>
                                 <p className="m-0 text-sm text-[#a3acc2]">{t.address}</p>
                             </div>
-
                             {/* RIGHT PART TIME*/}
                             <div className="flex flex-wrap gap-4 md:justify-end">
                                 {t.times.map((time) => (
@@ -159,6 +153,7 @@ export default function MoviePage({ params }: PageProps) {
                                             backgroundColor: "#F05A3B",
                                             boxShadow: "0 4px 0 0 #B8402B",
                                         }}
+
                                         onMouseDown={(e) => {
                                             (e.currentTarget.style.transform = "translateY(1px)");
                                             (e.currentTarget.style.boxShadow = "0 2px 0 0 #B8402B");
@@ -180,7 +175,6 @@ export default function MoviePage({ params }: PageProps) {
                     ))}
                 </div>
             </section>
-
             <div className="w-full mt-8 mb-8">
                 <img src="/footerStrip.png" alt="Footer strip" className="w-full h-auto object-cover rounded-xl shadow-lg" />
             </div>

@@ -5,20 +5,17 @@ const MovieSlider = ({ title, movies }: { title: string; movies: IMovie[] }) => 
     const [currentSlide, setCurrentSlide] = useState(0);
     const moviesPerPage = 7;
     const numPages = Math.ceil(movies.length / moviesPerPage);
-
     const handlePrev = () => {
         setCurrentSlide((prev) => (prev - 1 + numPages) % numPages);
     };
-
     const handleNext = () => {
         setCurrentSlide((prev) => (prev + 1) % numPages);
     };
 
-    // Calculate the slice of movies to display on the current slide
+// Calculate the slice of movies to display on the current slide
     const startIndex = currentSlide * moviesPerPage;
     const endIndex = startIndex + moviesPerPage;
     const moviesToShow = movies.slice(startIndex, endIndex);
-
     return (
         <section className="mb-12">
             <div className="flex items-center justify-between mb-4">
