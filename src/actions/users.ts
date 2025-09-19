@@ -148,8 +148,8 @@ console.log("Password valid?", isPasswordValid);
 
 export const getLoggedInUser = async () => {
     try {
-        const cookiesStore = await cookies();
-        const jwtToken = cookiesStore.get("jwt_token")?.value;
+        const cookesStore = await cookies();
+        const jwtToken = cookesStore.get("token")?.value;
         const decodedData: any = jwt.verify(
             jwtToken || "", 
             process.env.JWT_SECRET!

@@ -1,26 +1,19 @@
-'use client'
-import React, { useEffect, useState } from 'react'
-import UserInfo from '@/components/functional/user-info'
+import React from "react"
+import UserInfo from "@/components/functional/user-info"
+import { getLoggedInUser } from "@/actions/users"
 
-function UserDashboardPage() {
-  const [user, setUser] = useState<any>(null)
+export default async function UserDashboardPage() {
+  const response = await getLoggedInUser()
 
-  const fetchData = async () => {
-    try {
-      const res = await fetch("/api/users/me", { credentials: "include" })
-      const data = await res.json()
-      console.log("API /me response:", data)
-      if (data.success) {
-        setUser(data.data)
-      }
-    } catch (error) {
-      console.error("Something went wrong while fetching user", error)
-    }
+  if (!response.success) {
+    return (
+      <div className="p-5">
+        <h1 className="text-red-500">Something went wrong: {response.message}</h1>
+      </div>
+    )
   }
 
-  useEffect(() => {
-    fetchData()
-  }, [])
+  const user = response.data
 
   return (
     <div className="p-5">
@@ -29,5 +22,3 @@ function UserDashboardPage() {
     </div>
   )
 }
-
-export default UserDashboardPage
