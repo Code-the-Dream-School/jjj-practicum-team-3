@@ -74,6 +74,7 @@ import { NextResponse } from "next/server";
 import supabase from "@/config/supabase-config";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
+import { cookies } from "next/headers";
 
 export async function POST(req: Request) {
   try {
@@ -112,7 +113,12 @@ export async function POST(req: Request) {
     const response = NextResponse.json({
       success: true,
       message: "User logged in successfully",
-      user: { id: existingUser.id, email: existingUser.email, username: existingUser.username, role: existingUser.role },
+      user: { 
+        id: existingUser.id, 
+        email: existingUser.email, 
+        username: existingUser.username, 
+        role: existingUser.role 
+      },
       token,
     });
 

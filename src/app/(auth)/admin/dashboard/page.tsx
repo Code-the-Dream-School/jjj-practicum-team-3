@@ -5,20 +5,22 @@ import React from 'react'
 
 function AdminDashboardPage() {
   const [user, setUser] = React.useState<any>(null)
-  const [message, setMessage] = React.useState<{ text: string; type: 'error' | 'success' } | null>(null)
+  // const [message, setMessage] = React.useState<{ text: string; type: 'error' | 'success' } | null>(null)
 
   const fetchData = async () => {
     try {
       const response = await getLoggedInUser()
-      if (!response.success) {
-        setMessage({ text: response.message || "Something went wrong", type: "error" })
-        return;
-      } 
-        setUser(response?.data)
-  
+    //   if (!response.success) {
+    //     setMessage({ text: response.message || "Something went wrong", type: "error" })
+    //     return;
+    //   } 
+    //     setUser(response?.data)
+    console.log("getLoggedInUser response:", response) 
+    setUser(response?.data) // ✅ only store the actual user
+
     } catch (error) {
       console.error("Something went wrong while fetching data", error)
-      setMessage({ text: "Unexpected error while fetching user data", type: "error" })
+      // setMessage({ text: "Unexpected error while fetching user data", type: "error" })
     }
   }
 
@@ -30,7 +32,9 @@ function AdminDashboardPage() {
     <div className="p-5">
       <h1>Admin Dashboard Page</h1>
       
-      {message && (
+      {user ? <UserInfo user={user} /> : <p>Loading...</p>}
+
+      {/* {message && (
         <div
           className={`p-3 mb-4 rounded-lg text-white font-medium text-center ${
             message.type === "error" ? "bg-red-500" : "bg-green-500"
@@ -40,7 +44,7 @@ function AdminDashboardPage() {
         </div>
       )}
 
-      {user && <UserInfo user={user!} /> }
+      {user && <UserInfo user={user!} /> } */}
     </div>
   )
 }
