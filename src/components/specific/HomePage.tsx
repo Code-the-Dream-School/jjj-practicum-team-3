@@ -1,6 +1,5 @@
 'use client';
 import {useEffect, useMemo, useRef, useState} from "react";
-import {movieData} from "@/data/movieData";
 import {theaterData} from "@/data/theaterData";
 import MovieSlider from "@/components/specific/MovieSlider";
 import FooterStrip from "@/components/shared/layout/FooterStrip";

@@ -11,6 +11,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "test:ts": "ts-node --require tsconfig-paths/register src/testMovieById.ts",
     "run-script": "ts-node --esm src/scripts/insertData.ts"
   },
   "dependencies": {
@@ -40,6 +41,7 @@
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.12",
     "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.9.2"
   }
 }
