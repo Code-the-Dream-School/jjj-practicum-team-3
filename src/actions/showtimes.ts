@@ -1,118 +1,119 @@
-'use server'
+'use server';
 
-import supabase from "@/config/supabase-config"
-import { IShowtimes } from "@/interfaces/index"
+import supabase from "@/config/supabase-config";
+import { IShowtimes } from "@/interfaces/index";
 
 export const AddShowtimes = async (show: Partial<IShowtimes>) => {
 	const { data, error } = await supabase
 		.from("showtimes")
 		.insert(show)
-		.select('*')
+		.select('*');
 
-		if (error) {
-            return {
-                success: false,
-                message: error.message,
-             }
-		}
+	if (error) {
+		return {
+			success: false,
+			message: error.message,
+		};
+	}
 
-		return{
-			success: true,
-			message: 'Showtime added successfully',
-			}
-}
+	return {
+		success: true,
+		message: 'Showtime added successfully',
+	};
+};
 
-export const updateShowtimes = async (id:string, show: Partial<IShowtimes>) => {
+export const updateShowtimes = async (id: string, show: Partial<IShowtimes>) => {
 	const { data, error } = await supabase
 		.from('showtimes')
 		.update(show)
-		.eq('id', id)
+		.eq('id', id);
 
-		if (error) {
-            return {
-                success: false,
-                message: error.message,
-             }
-		}
+	if (error) {
+		return {
+			success: false,
+			message: error.message,
+		};
+	}
 
-		return{
-			success: true,
-			message: 'Showtime updated successfully',
-			}
-}
+	return {
+		success: true,
+		message: 'Showtime updated successfully',
+	};
+};
 
 export const deleteShowtimes = async (id: string) => {
-    const { data, error } = await supabase
-        .from("showtimes")
-        .delete()
-        .eq("id", id)
+	const { data, error } = await supabase
+		.from("showtimes")
+		.delete()
+		.eq("id", id);
 
-        if (error) {
-            return {
-                success: false,
-                message: error.message,
-            }
-        }
+	if (error) {
+		return {
+			success: false,
+			message: error.message,
+		};
+	}
 
-        return{
-            success: true,
-            message: "Showtime deleted successfully",
-            };
-
-}
+	return {
+		success: true,
+		message: "Showtime deleted successfully",
+	};
+};
 
 export const getAllShowtimes = async () => {
 	const { data, error } = await supabase
 		.from('showtimes')
-		.select("*, movie:movies(*)") //add theatre: theatres(*) later
-		.order("created_at", { ascending: false});
+		.select("*, movie:movies(*)")
+		.order("created_at", { ascending: false });
 
-		if (error) {
-		 return {
-            success: false,
-            message: error.message,
-         }
-		}
-
-		return{
-			success: true,
-			message: "Showtime fetched successfully",
-			data: data as IShowtimes[],
+	if (error) {
+		return {
+			success: false,
+			message: error.message,
 		};
-}
+	}
+
+	return {
+		success: true,
+		message: "Showtime fetched successfully",
+		data: data as IShowtimes[],
+	};
+};
 
 export const getShowtimesById = async (id: string) => {
 	const { data, error } = await supabase
 		.from('showtimes')
-		.select('*')
-		.eq("id", id)
+		.select('*, movie:movies(*)')
+		.eq("id", id);
 
-		if (error) {
-		throw new Error(error.message)
-		}
-
-		if(data.length === 0) {
-			return {
-				success: false,
-				message: "Showtime not found!"
-				}
-			}
-
-		const showtime = data[0];
-
-		return{
-			success: true,
-			message: "Showtime fetched successfully",
-			data: showtime as IShowtimes
+	if (error) {
+		return {
+			success: false,
+			message: error.message,
 		};
-}
+	}
+
+	if (data.length === 0) {
+		return {
+			success: false,
+			message: "Showtime not found!",
+		};
+	}
+
+	const showtime = data[0];
+
+	return {
+		success: true,
+		message: "Showtime fetched successfully",
+		data: showtime as IShowtimes,
+	};
+};
 
 export const getShowtimesByMovieId = async (movieId: string, dateFilter?: string) => {
 	try {
-		// Step 1: fetch all the showtimes for the given movieId (optionally filter by date)
 		let query = supabase
 			.from("showtimes")
-			.select("*, theater:theaters(*)")
+			.select("id, date, time, ticket_price, theater:theaters(*)")
 			.eq("movie_id", movieId);
 
 		if (dateFilter) {
@@ -128,7 +129,6 @@ export const getShowtimesByMovieId = async (movieId: string, dateFilter?: string
 			};
 		}
 
-		// Defensive check — ensure showtimes is not null/undefined
 		if (!showtimes || showtimes.length === 0) {
 			return {
 				success: true,
@@ -137,7 +137,6 @@ export const getShowtimesByMovieId = async (movieId: string, dateFilter?: string
 			};
 		}
 
-		// Step 2: group the showtimes by theaterId
 		const groupedData: any[] = [];
 		const theaterIdsObject: Record<string, boolean> = {};
 
@@ -146,18 +145,17 @@ export const getShowtimesByMovieId = async (movieId: string, dateFilter?: string
 			if (theaterIdsObject[theaterId]) {
 				const group = groupedData.find((g) => g.theater.id === theaterId);
 				if (group) {
-					group.shows.push({ date: show.date, time: show.time });
+					group.shows.push({ id: show.id, date: show.date, time: show.time, ticket_price: show.ticket_price });
 				}
 			} else {
 				theaterIdsObject[theaterId] = true;
 				groupedData.push({
 					theater: show.theater,
-					shows: [{ date: show.date, time: show.time }],
+					shows: [{ id: show.id, date: show.date, time: show.time, ticket_price: show.ticket_price }],
 				});
 			}
 		});
 
-		// Step 3: return the grouped data
 		return {
 			success: true,
 			message: "Shows fetched successfully",
