@@ -5,7 +5,7 @@ export async function GET(
   req: Request,
   { params }: { params: { showtime_id?: string; seat_id?: string } }
 ) {
-  const { showtime_id, seat_id } = await params;
+  const { showtime_id, seat_id } = params;
   if (!showtime_id || !seat_id) {
     return new Response(
       JSON.stringify({ error: "Missing showtime_id or seat_id" }),
