@@ -2,6 +2,17 @@
 
 import React, { useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+  LineChart,
+  Line,
+} from "recharts"; 
 
 // Types
 type Movie = { id: string; title: string; genre: string };
@@ -113,25 +124,50 @@ export default function AdminDashboardPage() {
         </div>
       </section>
 
-      {/* Charts — placeholders */}
-      <section className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="rounded-lg border border-[#2b3450] bg-[#1b2030] p-4 text-[#a3acc2]">
-          <h3 className="mb-2 text-sm font-bold">Movies by Genre</h3>
-          {moviesByGenre.length > 0 ? (
-            <pre className="text-xs">{JSON.stringify(moviesByGenre, null, 2)}</pre>
-          ) : (
-            <p className="text-xs text-[#a3acc2]">No genre data available</p>
-          )}
-        </div>
-        <div className="rounded-lg border border-[#2b3450] bg-[#1b2030] p-4 text-[#a3acc2]">
-          <h3 className="mb-2 text-sm font-bold">Weekly Signups</h3>
-          {weeklySignups.length > 0 ? (
-            <pre className="text-xs">{JSON.stringify(weeklySignups, null, 2)}</pre>
-          ) : (
-            <p className="text-xs text-[#a3acc2]">No signup data available</p>
-          )}
-        </div>
-      </section>
+      {/* Charts */}
+<section className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-6">
+  {/* Movies by Genre */}
+  <div className="rounded-lg border border-[#2b3450] bg-[#1b2030] p-4 text-[#a3acc2]">
+    <h3 className="mb-2 text-sm font-bold">Movies by Genre</h3>
+    {moviesByGenre.length > 0 ? (
+      <ResponsiveContainer width="100%" height={250}>
+        <BarChart data={moviesByGenre}>
+          <CartesianGrid strokeDasharray="3 3" stroke="#2b3450" />
+          <XAxis dataKey="genre" stroke="#a3acc2" />
+          <YAxis stroke="#a3acc2" />
+          <Tooltip
+            contentStyle={{ backgroundColor: "#1b2030", border: "1px solid #2b3450" }}
+            labelStyle={{ color: "#a3acc2" }}
+          />
+          <Bar dataKey="count" fill="#4f46e5" radius={[6, 6, 0, 0]} />
+        </BarChart>
+      </ResponsiveContainer>
+    ) : (
+      <p className="text-xs text-[#a3acc2]">No genre data available</p>
+    )}
+  </div>
+
+  {/* Weekly Signups */}
+  <div className="rounded-lg border border-[#2b3450] bg-[#1b2030] p-4 text-[#a3acc2]">
+    <h3 className="mb-2 text-sm font-bold">Weekly Signups</h3>
+    {weeklySignups.length > 0 ? (
+      <ResponsiveContainer width="100%" height={250}>
+        <LineChart data={weeklySignups}>
+          <CartesianGrid strokeDasharray="3 3" stroke="#2b3450" />
+          <XAxis dataKey="week" stroke="#a3acc2" />
+          <YAxis stroke="#a3acc2" />
+          <Tooltip
+            contentStyle={{ backgroundColor: "#1b2030", border: "1px solid #2b3450" }}
+            labelStyle={{ color: "#a3acc2" }}
+          />
+          <Line type="monotone" dataKey="users" stroke="#10b981" strokeWidth={2} dot />
+        </LineChart>
+      </ResponsiveContainer>
+    ) : (
+      <p className="text-xs text-[#a3acc2]">No signup data available</p>
+    )}
+  </div>
+</section>
     </main>
   );
 }
