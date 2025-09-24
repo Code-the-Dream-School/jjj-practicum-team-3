@@ -12,61 +12,20 @@ export const getAdminDashboardData = async () => {
 
     // 2. New users this week
     const startOfWeek = new Date();
-    startOfWeek.setDate(startOfWeek.getDate() - 7); // last 7 days
+    startOfWeek.setDate(startOfWeek.getDate() - 7);
     const { count: newUsersThisWeek, error: usersError } = await supabase
       .from("users")
       .select("*", { count: "exact", head: true })
       .gte("created_at", startOfWeek.toISOString());
     if (usersError) throw new Error(usersError.message);
 
-    // 3. Total revenue + most popular genre
-    const { data: bookings, error: bookingsError } = await supabase
-      .from("bookings")
-      .select(`
-        id,
-        seat_id,
-        showtimes:showtime_id (
-          ticket_price,
-          movies:movie_id (
-            genre
-          )
-        )
-      `)
-      .eq("status", "booked");
-    if (bookingsError) throw new Error(bookingsError.message);
-
-    let totalRevenue = 0;
-    const genreCount: Record<string, number> = {};
-
-    bookings?.forEach((b) => {
-      // seat_id is an array of seat labels
-      const seatCount = Array.isArray(b.seat_id) ? b.seat_id.length : 0;
-    
-      const showtime = Array.isArray(b.showtimes) ? b.showtimes[0] : b.showtimes;
-      const price = showtime?.ticket_price || 0;
-      totalRevenue += seatCount * price;
-    
-      const movie = Array.isArray(showtime?.movies) ? showtime.movies[0] : showtime?.movies;
-      const genre = movie?.genre;
-      if (genre) {
-        genreCount[genre] = (genreCount[genre] || 0) + 1;
-      }
-    });
-
-    let mostPopularGenre = "N/A";
-    const sortedGenres = Object.entries(genreCount).sort((a, b) => b[1] - a[1]);
-    if (sortedGenres.length > 0) {
-      mostPopularGenre = sortedGenres[0][0];
-    }
-
-    // 4. Movies list
+    // 3. Movies list (needed for bar chart + fallback)
     const { data: moviesList, error: moviesListError } = await supabase
       .from("movies")
       .select("id, title, genre")
       .order("title", { ascending: true });
     if (moviesListError) throw new Error(moviesListError.message);
 
-    // 5. Movies by genre (for bar chart)
     const moviesByGenre: { genre: string; count: number }[] = [];
     if (moviesList) {
       const genreMap: Record<string, number> = {};
@@ -78,7 +37,57 @@ export const getAdminDashboardData = async () => {
       }
     }
 
-    // 6. Weekly signups (last 7 days grouped by day)
+    // 4. Bookings (for revenue + most popular genre)
+    const { data: bookings, error: bookingsError } = await supabase
+      .from("bookings")
+      .select(`
+        id,
+        total_amount,
+        total_tickets,
+        movie:movie_id (
+          genre
+        )
+      `)
+      .eq("status", "booked");
+    if (bookingsError) throw new Error(bookingsError.message);
+
+    let totalRevenue = 0;
+    const genreCount: Record<string, number> = {};
+
+    bookings?.forEach((b) => {
+      // Sum revenue directly from bookings
+      if (typeof b.total_amount === "number" && !Number.isNaN(b.total_amount)) {
+        totalRevenue += b.total_amount;
+      }
+
+      // Handle movie relation safely (array or single object)
+      if (Array.isArray(b.movie)) {
+        b.movie.forEach((m) => {
+          if (m?.genre) {
+            genreCount[m.genre] = (genreCount[m.genre] || 0) + 1;
+          }
+        });
+      } else if ((b.movie as any)?.genre) {
+        const g = (b.movie as any).genre as string;
+        genreCount[g] = (genreCount[g] || 0) + 1;
+      }
+    });
+
+    // 5. Most popular genre: from bookings, fallback to catalog
+    let mostPopularGenre = "";
+    const sortedByBookings = Object.entries(genreCount).sort(
+      (a, b) => b[1] - a[1]
+    );
+    if (sortedByBookings.length > 0) {
+      mostPopularGenre = sortedByBookings[0][0];
+    } else if (moviesByGenre.length > 0) {
+      const sortedMoviesByGenre = [...moviesByGenre].sort(
+        (a, b) => b.count - a.count
+      );
+      mostPopularGenre = sortedMoviesByGenre[0].genre;
+    }
+
+    // 6. Weekly signups
     const { data: weeklyUsers, error: weeklyError } = await supabase
       .from("users")
       .select("id, created_at")
