@@ -2,6 +2,7 @@
 import {useRouter} from "next/navigation";
 import {useAuthStore} from "@/lib/store/authStore";
 import {useEffect} from "react";
+import Link from "next/link";
 
 
 
@@ -34,12 +35,14 @@ const Header = () => {
     return (
         <header className="bg-[#151925] text-white p-4 shadow-md flex flex-col sm:flex-row justify-between items-center transition-colors duration-300">
             <div className="flex-shrink-0 mb-4 sm:mb-0">
+                <Link href="/">
                 <img src="/logo.png" alt="ComeAndSee Logo" className="h-16 w-auto transition-transform duration-300 transform hover:scale-110" />
+                </Link>
             </div>
             <nav className="flex-grow mb-4 sm:mb-0">
                 <ul className="flex justify-center sm:justify-start space-x-6 text-lg font-medium">
-                    <li><a href="#" className="hover:text-red-400 transition-colors duration-300">Movies</a></li>
-                    <li><a href="#" className="hover:text-red-400 transition-colors duration-300">Coming Soon</a></li>
+                    <li><Link href="/movie-listing">Movies</Link></li>
+                    <li><Link href="/movie-listing">Coming Soon</Link></li>
                 </ul>
             </nav>
             <div className="flex items-center space-x-4">
