@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import MovieCardHomePage from "@/components/specific/MovieCardHomePage";
-import { IMovie } from '@/types/IMovie';
+import { IMovie } from '@/interfaces/index';
+import Link from 'next/link'; // Import Link from next/link
+
 const MovieSlider = ({ title, movies }: { title: string; movies: IMovie[] }) => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const moviesPerPage = 7;
@@ -12,24 +14,25 @@ const MovieSlider = ({ title, movies }: { title: string; movies: IMovie[] }) => 
         setCurrentSlide((prev) => (prev + 1) % numPages);
     };
 
-// Calculate the slice of movies to display on the current slide
+    // Calculate the slice of movies to display on the current slide
     const startIndex = currentSlide * moviesPerPage;
     const endIndex = startIndex + moviesPerPage;
     const moviesToShow = movies.slice(startIndex, endIndex);
+
     return (
         <section className="mb-12">
             <div className="flex items-center justify-between mb-4">
                 <h2 className="text-2xl sm:text-3xl font-bold">{title}</h2>
-                <a href="#" className="text-blue-400 hover:underline">See All {title}</a>
+                <Link href="/movie-listing" className="text-blue-400 hover:underline">
+                    See All {title}
+                </Link>
             </div>
-            {/* The main container uses relative positioning for the navigation arrows */}
             <div className="relative">
                 <div className="flex justify-center md:justify-start gap-4 flex-wrap md:flex-nowrap">
                     {moviesToShow.map(movie => (
                         <MovieCardHomePage key={movie.id} movie={movie} />
                     ))}
                 </div>
-                {/* Navigation Arrows */}
                 {movies.length > moviesPerPage && (
                     <>
                         <button

@@ -1,4 +1,4 @@
-import { IMovie } from '@/types/IMovie';
+import { IMovie } from '@/interfaces';
 import Link from 'next/link';
 
 const MovieCardHomePage = ({ movie }: { movie: IMovie }) => {

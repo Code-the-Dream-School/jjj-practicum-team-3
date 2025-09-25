@@ -1,75 +1,58 @@
 import { supabase } from "@/lib/supabaseClient";
-import { ITheater } from "@/types/ITheater";
+import { NextResponse } from "next/server";
+import { ITheater, ITheaterMovie, IShowtimes } from "@/interfaces/index";
 
 export async function GET() {
-  const { data, error } = await supabase.from("theaters").select("*");
+  const { data, error } = await supabase
+      .from("theaters")
+      .select(`
+      id, name, address, latitude, longitude,
+      showtimes (
+        id, movie_id, theater_id, date, time, ticket_price, available_seats, created_at, is_active,
+        movies (
+          title
+        )
+      )
+    `);
 
   if (error) {
-    return new Response(JSON.stringify({ error: error.message }), {
-      headers: { "Content-Type": "application/json" },
-      status: 500,
-    });
+    return NextResponse.json({ error: error.message }, { status: 500 });
   }
-  return new Response(JSON.stringify(data), {
-    headers: { "Content-Type": "application/json" },
-    status: 200,
+
+  // Transform data to match ITheater interface
+  const transformedData: ITheater[] = data.map((theater) => {
+    const movieMap: { [key: string]: ITheaterMovie } = {};
+    theater.showtimes.forEach((showtime: any) => {
+      const movieTitle = showtime.movies.title;
+      if (!movieMap[movieTitle]) {
+        movieMap[movieTitle] = {
+          title: movieTitle,
+          showtimes: [],
+        };
+      }
+      movieMap[movieTitle].showtimes.push({
+        id: showtime.id,
+        movie_id: showtime.movie_id,
+        theater_id: showtime.theater_id,
+        date: showtime.date,
+        time: showtime.time,
+        ticket_price: showtime.ticket_price,
+        available_seats: showtime.available_seats,
+        created_at: showtime.created_at,
+        is_active: showtime.is_active,
+        movie: { title: movieTitle } as any,
+      });
+    });
+
+    return {
+      id: theater.id,
+      name: theater.name,
+      address: theater.address,
+      latitude: theater.latitude,
+      longitude: theater.longitude,
+      movies: Object.values(movieMap),
+    };
   });
-}
 
-export async function POST(request: Request) {
-  try {
-    const body = await request.json();
-    const theater = body as ITheater;
-
-    if (
-      !theater?.name ||
-      !theater?.address ||
-      theater.latitude === undefined ||
-      theater.longitude === undefined
-    ) {
-      return new Response(
-        JSON.stringify({
-          error:
-            "Missing one or more required fields: name, address, capacity, is_active",
-        }),
-        { headers: { "Content-Type": "application/json" }, status: 400 }
-      );
-    }
-    if (theater.name.length < 2 || theater.name.length > 100) {
-      return new Response(
-        JSON.stringify({ error: "Theater name must be 2–100 characters" }),
-        { headers: { "Content-Type": "application/json" }, status: 400 }
-      );
-    }
-
- if (typeof theater.latitude !== "number" || typeof theater.longitude !== "number") {
-  return new Response(
-    JSON.stringify({ error: "Latitude and longitude must be numbers" }),
-    { headers: { "Content-Type": "application/json" }, status: 400 }
-  );
-}
-    
-    const { data, error } = await supabase
-      .from("theaters")
-      .insert([
-        {
-          name: theater.name,
-          address: theater.address,
-          latitude: theater.latitude,
-          longitude: theater.longitude,
-        },
-      ])
-      .select()
-      .single();
-    return new Response(JSON.stringify(theater), {
-      headers: { "Content-Type": "application/json" },
-      status: 201,
-    });
-  } catch (err) {
-    console.error("Unexpected error:", err);
-    return new Response(JSON.stringify({ error: "Invalid request" }), {
-      headers: { "Content-Type": "application/json" },
-      status: 400,
-    });
-  }
+  return NextResponse.json(transformedData, { status: 200 });
 }

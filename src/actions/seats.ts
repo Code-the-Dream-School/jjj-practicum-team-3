@@ -1,15 +1,13 @@
 'use server';
 
-import supabase from '@/config/supabase-config';
-
-type SeatStatus = 'available' | 'selected' | 'booked' | 'premium';
+import { supabase } from '@/lib/supabaseClient';
 
 interface Seat {
-    id: number;
-    showtime_id: number;
+    id: string;
+    showtime_id: string;
     row: string;
     number: number;
-    seat_status: SeatStatus;
+    seat_status: 'available' | 'selected' | 'booked' | 'premium';
     seat_code: string;
 }
 
@@ -18,75 +16,109 @@ interface SeatRow {
     seats: Seat[];
 }
 
-export const getSeatsByShowtimeId = async (showtimeId: string) => {
-    console.log("Fetching seats for showtimeId:", showtimeId);
+export async function getSeatsByShowtimeId(showtimeId: string): Promise<{
+    success: boolean;
+    data?: SeatRow[];
+    message?: string;
+}> {
     try {
         const { data, error } = await supabase
             .from('seats')
             .select('id, showtime_id, row, number, seat_status, seat_code')
-            .eq('showtime_id', parseInt(showtimeId))
-            .order('row')
-            .order('number');
-
-        console.log("Supabase response:", { data, error });
+            .eq('showtime_id', showtimeId)
+            .order('row', { ascending: true })
+            .order('number', { ascending: true });
 
         if (error) {
-            return { success: false, message: error.message, data: [] };
+            console.error('Supabase error in getSeatsByShowtimeId:', showtimeId, error);
+            return { success: false, message: error.message };
         }
 
         if (!data || data.length === 0) {
-            return { success: true, message: 'No seats found', data: [] };
+            console.warn('No seats found for showtime ID:', showtimeId);
+            return { success: true, data: [], message: 'No seats available' };
         }
 
         const seatRows: SeatRow[] = [];
-        const rows = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
-        for (const row of rows) {
-            const rowSeats = data
-                .filter((seat: Seat) => seat.row === row)
-                .sort((a: Seat, b: Seat) => a.number - b.number);
-            if (rowSeats.length > 0) {
-                seatRows.push({ row: row, seats: rowSeats });
+        const rowMap: { [key: string]: Seat[] } = {};
+
+        data.forEach((seat: Seat) => {
+            if (!rowMap[seat.row]) {
+                rowMap[seat.row] = [];
             }
+            rowMap[seat.row].push({
+                id: seat.id,
+                showtime_id: seat.showtime_id,
+                row: seat.row,
+                number: seat.number,
+                seat_status: seat.seat_status,
+                seat_code: seat.seat_code,
+            });
+        });
+
+        for (const row in rowMap) {
+            seatRows.push({ row, seats: rowMap[row] });
         }
 
-        return { success: true, message: 'Seats fetched successfully', data: seatRows };
-    } catch (error) {
-        console.error("Caught error in getSeatsByShowtimeId:", error);
-        return { success: false, message: 'Failed to fetch seats', data: [] };
+        return { success: true, data: seatRows };
+    } catch (err) {
+        console.error('Unexpected error in getSeatsByShowtimeId:', showtimeId, err);
+        return { success: false, message: 'Internal server error' };
     }
-};
+}
 
-export const getSeatCodesByIds = async (showtimeId: string, seatIds: string[]) => {
-    try {
-        const { data, error } = await supabase
-            .from('seats')
-            .select('seat_code')
-            .in('id', seatIds.map(id => parseInt(id)))
-            .eq('showtime_id', parseInt(showtimeId));
-
-        console.log("Get seat codes response:", { data, error });
-
-        if (error) {
-            return { success: false, message: error.message, data: [] };
-        }
-
-        return { success: true, message: 'Seat codes fetched', data: data.map((item) => item.seat_code) };
-    } catch (error) {
-        console.error("Caught error in getSeatCodesByIds:", error);
-        return { success: false, message: 'Failed to fetch seat codes', data: [] };
-    }
-};
-
-export const bookSeats = async (showtimeId: string, seatIds: string[]) => {
+export async function bookSeats(
+    showtimeId: string,
+    seatIds: string[]
+): Promise<{ success: boolean; message?: string }> {
     try {
         const { error } = await supabase
             .from('seats')
             .update({ seat_status: 'booked' })
-            .in('id', seatIds.map(id => parseInt(id)))
-            .eq('showtime_id', parseInt(showtimeId));
-        if (error) return { success: false, message: error.message };
-        return { success: true, message: 'Seats booked successfully' };
-    } catch (error) {
-        return { success: false, message: 'Failed to book seats' };
+            .in('id', seatIds)
+            .eq('showtime_id', showtimeId)
+            .eq('seat_status', 'available');
+
+        if (error) {
+            console.error('Supabase error in bookSeats:', showtimeId, error);
+            return { success: false, message: error.message };
+        }
+
+        return { success: true };
+    } catch (err) {
+        console.error('Unexpected error in bookSeats:', showtimeId, err);
+        return { success: false, message: 'Internal server error' };
     }
-};
+}
+
+export async function getSeatCodesByIds(showtimeId: string, seatIds: string[]): Promise<{
+    success: boolean;
+    data?: string[];
+    message?: string;
+}> {
+    try {
+        const { data, error } = await supabase
+            .from('seats')
+            .select('seat_code')
+            .eq('showtime_id', showtimeId)
+            .in('id', seatIds);
+
+        if (error) {
+            console.error('Supabase error in getSeatCodesByIds:', showtimeId, error);
+            return { success: false, message: error.message };
+        }
+
+        if (!data || data.length === 0) {
+            console.warn('No seat codes found for showtime ID:', showtimeId, 'and seat IDs:', seatIds);
+            return { success: true, data: [], message: 'No seat codes found' };
+        }
+
+        return {
+            success: true,
+            data: data.map((seat) => seat.seat_code),
+        };
+    } catch (err) {
+        console.error('Unexpected error in getSeatCodesByIds:', showtimeId, err);
+        return { success: false, message: 'Internal server error' };
+    }
+}
