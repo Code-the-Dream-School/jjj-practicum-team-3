@@ -27,13 +27,12 @@ const SignIn: React.FC = () => {
             if (res.ok && data.token) {
                 setMessage({ text: 'Login successful!', type: 'success' });
 
-                // ✅ Save token to localStorage
+                // Save token to localStorage
                 api.saveToken(data.token);
 
-                if (data.user?.id) {
-                    const userRes = await fetch(`/api/users/${data.user.id}`);
-                    console.log('User details:', await userRes.json());
-                }
+                const meRes = await fetch("/api/users/me", { credentials: "include" });
+                console.log("User details:", await meRes.json());
+                
                 setTimeout(() => router.push('/'), 2000);
             } else {
                 setMessage({ text: data.error || data.message || 'Login failed', type: 'error' });

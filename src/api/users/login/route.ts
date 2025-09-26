@@ -6,53 +6,46 @@ import jwt from "jsonwebtoken";
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-    const { username, email, password } = body;
+    const { email, password } = body;
 
-    if (!username || !email || !password) {
-      return NextResponse.json({ error: "All fields are required" }, { status: 400 });
+    if (!email || !password) {
+      return NextResponse.json({ success: false, error: "Email and password are required" }, { status: 400 });
     }
 
-    // 1. Check if user already exists
-    const { data: existingUser } = await supabase
+    // 1. Fetch user by email
+    const { data: existingUser, error } = await supabase
       .from("users")
-      .select("id")
+      .select("*")
       .eq("email", email.toLowerCase().trim())
       .single();
 
-    if (existingUser) {
-      return NextResponse.json({ error: "User already exists" }, { status: 400 });
+    if (error || !existingUser) {
+      return NextResponse.json({ success: false, error: "User not found" }, { status: 400 });
     }
 
-    // 2. Hash password
-    const hashedPassword = await bcrypt.hash(password, 10);
-
-    // 3. Insert user
-    const { data, error } = await supabase.from("users").insert([
-      {
-        username,
-        email: email.toLowerCase().trim(),
-        password: hashedPassword,
-        role: "user",
-        is_active: true,
-      },
-    ]).select().single();
-
-    if (error) {
-      return NextResponse.json({ error: error.message }, { status: 500 });
+    // 2. Compare password
+    const isPasswordValid = await bcrypt.compare(password, existingUser.password);
+    if (!isPasswordValid) {
+      return NextResponse.json({ success: false, error: "Invalid credentials" }, { status: 401 });
     }
 
-    // 4. Create JWT
+    // 3. Create JWT
     const token = jwt.sign(
-      { userId: data.id, email: data.email },
+      { userId: existingUser.id, email: existingUser.email },
       process.env.JWT_SECRET!,
       { expiresIn: "1d" }
     );
 
-    // 5. Send response with cookie
+    // 4. Send response with cookie + user data
     const response = NextResponse.json({
       success: true,
-      message: "User registered successfully",
-      user: { id: data.id, email: data.email, username: data.username },
+      message: "User logged in successfully",
+      user: {
+        id: existingUser.id,
+        email: existingUser.email,
+        username: existingUser.username,
+        role: existingUser.role,
+      },
       token,
     });
 
@@ -66,6 +59,6 @@ export async function POST(req: Request) {
 
     return response;
   } catch (err: any) {
-    return NextResponse.json({ error: err.message }, { status: 500 });
+    return NextResponse.json({ success: false, error: err.message }, { status: 500 });
   }
 }
