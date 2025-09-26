@@ -2,8 +2,12 @@
 import React, { useState } from 'react';
 import {useRouter} from "next/navigation";
 import {api} from '@/services/apiService';
+import { useUsersStore } from "@/lib/store/usersStore";
+
 const SignIn: React.FC = () => {
     const router = useRouter();
+    const setUser = useUsersStore((state) => state.setUser); 
+
     const [email, setEmail] = useState<string>('');
     const [password, setPassword] = useState<string>('');
     const [message, setMessage] = useState<{ text: string; type: 'success' | 'error' } | null>(null);
@@ -26,12 +30,15 @@ const SignIn: React.FC = () => {
     
             if (res.ok && data.token) {
                 setMessage({ text: 'Login successful!', type: 'success' });
-
-                // Save token to localStorage
                 api.saveToken(data.token);
 
                 const meRes = await fetch("/api/users/me", { credentials: "include" });
-                console.log("User details:", await meRes.json());
+                const meData = await meRes.json();
+                console.log("User details:", meData);
+
+                if (meData.success) {
+                    setUser(meData.data);
+                  }
                 
                 setTimeout(() => router.push('/'), 2000);
             } else {
@@ -54,7 +61,10 @@ const SignIn: React.FC = () => {
             <div className="w-full max-w-md p-8 bg-white rounded-xl shadow-[0_0_40px_rgba(40,111,248,0.5)] transform transition-transform duration-300 hover:scale-105">
                 <h1 className="text-4xl font-bold text-center mb-6 text-gray-800">Login</h1>
                 {message && (
-                    <div className={`p-3 mb-4 rounded-lg text-white font-medium text-center ${message.type === 'success' ? 'bg-green-500' : 'bg-red-500'}`}>
+                    <div 
+                        className={`p-3 mb-4 rounded-lg text-white font-medium text-center ${
+                            message.type === 'success' ? 'bg-green-500' : 'bg-red-500'
+                            }`}>
                         {message.text}
                     </div>
                 )}
