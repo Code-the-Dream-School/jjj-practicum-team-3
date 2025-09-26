@@ -5,27 +5,55 @@ import supabase from "@/config/supabase-config";
 
 export async function GET() {
   try {
-    const cookieStore = cookies();
-    const token = cookieStore.get("jwt_token")?.value; // ✅ no await
+    // Grab token from cookies
+    const cookieStore = await cookies();
+    const jwtToken = cookieStore.get("jwt_token")?.value;
 
-    if (!token) {
-      return NextResponse.json({ success: false, message: "No token found" }, { status: 401 });
+    if (!jwtToken) {
+      return NextResponse.json(
+        { success: false, message: "No token found" },
+        { status: 401 }
+      );
     }
 
-    const decoded: any = jwt.verify(token, process.env.JWT_SECRET!);
+    // Verify JWT
+    let decoded: any;
+    try {
+      decoded = jwt.verify(jwtToken, process.env.JWT_SECRET!);
+    } catch (err) {
+      return NextResponse.json(
+        { success: false, message: "Invalid or expired token" },
+        { status: 401 }
+      );
+    }
 
-    const { data: user, error } = await supabase
+    // Lookup user in Supabase
+    const { data: users, error } = await supabase
       .from("users")
-      .select("id, email, username, role")
-      .eq("id", decoded.userId)
-      .single();
+      .select("id, email, role")
+      .eq("id", decoded.userId);
 
-    if (error || !user) {
-      return NextResponse.json({ success: false, message: "User not found" }, { status: 404 });
+    if (error || !users || users.length === 0) {
+      return NextResponse.json(
+        { success: false, message: "User not found" },
+        { status: 404 }
+      );
     }
 
-    return NextResponse.json({ success: true, data: user });
+    const user = users[0];
+
+    return NextResponse.json(
+      {
+        success: true,
+        message: "User data fetched successfully",
+        data: user,
+      },
+      { status: 200 }
+    );
   } catch (err: any) {
-    return NextResponse.json({ success: false, message: err.message }, { status: 500 });
+    return NextResponse.json(
+      { success: false, message: err.message || "Failed to get user" },
+      { status: 500 }
+    );
   }
 }

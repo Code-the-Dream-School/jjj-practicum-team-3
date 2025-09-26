@@ -1,17 +1,33 @@
 'use client';
 import {useRouter} from "next/navigation";
 import {useAuthStore} from "@/lib/store/authStore";
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import Link from "next/link";
 
-
+interface IUser {
+    id: string;
+    email: string;
+    role: string;
+  }
 
 const Header = () => {
     const { isLoggedIn, setIsLoggedIn, logout } = useAuthStore();
+    const [user, setUser] = useState<IUser | null>(null);
     useEffect(() => {
         const token = localStorage.getItem('authToken');
         if (token) {
             setIsLoggedIn(true);
+
+            // fetch user info
+      fetch("/api/users/me")
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.success && data.data) {
+          setUser(data.data); // { id, email, role }
+        }
+      })
+      .catch((err) => console.error("Error fetching user:", err));
+
         }
     }, [setIsLoggedIn]);
 
@@ -47,12 +63,23 @@ const Header = () => {
             </nav>
             <div className="flex items-center space-x-4">
                 {isLoggedIn ? (
+                    <>
+                    {/* Admin-only Dashboard button */}
+                    {user?.role === "admin" && (
+                        <Link
+                        href="/admin/dashboard"
+                        className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300 transform hover:scale-105"
+                      >
+                        Dashboard
+                        </Link>
+                    )}
                     <button
                         className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300 transform hover:scale-105"
                         onClick={handleLogoutClick}
                     >
                         Log Out
                     </button>
+                    </>
                 ) : (
                     <>
                         <button

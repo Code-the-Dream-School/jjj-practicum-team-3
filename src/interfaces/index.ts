@@ -1,3 +1,12 @@
+export interface IUser {
+    id: string;
+    email: string;
+    password?: string; 
+    username?: string;
+    role: "user" | "admin";
+    created_at?: string;
+  }
+
 export interface IMovie {
     id: number | string;
     title: string;
