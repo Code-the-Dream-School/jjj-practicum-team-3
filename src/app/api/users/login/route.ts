@@ -1,38 +1,34 @@
 import { NextResponse } from "next/server";
-import { supabase } from "@/services/supabaseClient";
-import bcrypt from "bcryptjs";
+import { loginUser } from "@/actions/users";
 
 export async function POST(req: Request) {
   try {
-    const { email, password } = await req.json();
+    const body = await req.json();
+    const result = await loginUser(body);
 
-    // 1️⃣ Fetch the user by username
-    const { data: user, error } = await supabase
-      .from("users")
-      .select("*")
-      .eq("email", email.toLowerCase().trim())
-      .single();
-
-    if (error || !user) {
-      return NextResponse.json({ error: "Invalid credentials" }, { status: 401 });
+    if (!result.success) {
+      return NextResponse.json(result, { status: 400 });
     }
 
-    // 2️⃣ Compare passwords
-    const isValid = await bcrypt.compare(password, user.password);
-    if (!isValid) {
-      return NextResponse.json({ error: "Invalid credentials" }, { status: 401 });
+    // Build the response
+    const res = NextResponse.json(result, { status: 200 });
+
+    // Set JWT cookie
+    if (result.token) {
+      res.cookies.set({
+        name: "jwt_token",
+        value: String(result.token),
+        httpOnly: true,
+        secure: process.env.NODE_ENV === "production",
+        path: "/",
+        maxAge: 60 * 60 * 24, // 1 day
+      });
     }
 
-    // 3️⃣ Return success (replace with real JWT later)
-    return NextResponse.json({
-      message: "Login successful",
-      token: "example-token",
-      user: user.id, email: user.email, username: user.username ,
-    }, { status: 200 });
-
+    return res;
   } catch (err: any) {
     return NextResponse.json(
-      { error: err.message || "Something went wrong" },
+      { success: false, message: err.message || "Something went wrong" },
       { status: 500 }
     );
   }

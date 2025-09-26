@@ -13,14 +13,14 @@ type UserDashboardData = {
 };
 
 export default function UserDashboardPage() {
-  const { user } = useUsersStore() as IUsersStore; // ✅ get logged-in user
+  const { user } = useUsersStore() as IUsersStore; // get logged-in user
   const [dashboardData, setDashboardData] = useState<UserDashboardData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     async function fetchData() {
-      if (!user?.id) return; // 🚦 wait until login fills store
+      if (!user?.id) return; // wait until login fills store
 
       try {
         setLoading(true);
