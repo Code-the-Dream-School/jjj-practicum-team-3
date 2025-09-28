@@ -1,16 +1,33 @@
 'use client';
 import {useRouter} from "next/navigation";
 import {useAuthStore} from "@/lib/store/authStore";
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
+import Link from "next/link";
 
-
+interface IUser {
+    id: string;
+    email: string;
+    role: string;
+  }
 
 const Header = () => {
     const { isLoggedIn, setIsLoggedIn, logout } = useAuthStore();
+    const [user, setUser] = useState<IUser | null>(null);
     useEffect(() => {
         const token = localStorage.getItem('authToken');
         if (token) {
             setIsLoggedIn(true);
+
+            // fetch user info
+      fetch("/api/users/me")
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.success && data.data) {
+          setUser(data.data); // { id, email, role }
+        }
+      })
+      .catch((err) => console.error("Error fetching user:", err));
+
         }
     }, [setIsLoggedIn]);
 
@@ -34,22 +51,35 @@ const Header = () => {
     return (
         <header className="bg-[#151925] text-white p-4 shadow-md flex flex-col sm:flex-row justify-between items-center transition-colors duration-300">
             <div className="flex-shrink-0 mb-4 sm:mb-0">
+                <Link href="/">
                 <img src="/logo.png" alt="ComeAndSee Logo" className="h-16 w-auto transition-transform duration-300 transform hover:scale-110" />
+                </Link>
             </div>
             <nav className="flex-grow mb-4 sm:mb-0">
                 <ul className="flex justify-center sm:justify-start space-x-6 text-lg font-medium">
-                    <li><a href="#" className="hover:text-red-400 transition-colors duration-300">Movies</a></li>
-                    <li><a href="#" className="hover:text-red-400 transition-colors duration-300">Coming Soon</a></li>
+                    <li><Link href="/movie-listing">Movies</Link></li>
+                    <li><Link href="/movie-listing">Coming Soon</Link></li>
                 </ul>
             </nav>
             <div className="flex items-center space-x-4">
                 {isLoggedIn ? (
+                    <>
+                    {/* Admin-only Dashboard button */}
+                    {user?.role === "admin" && (
+                        <Link
+                        href="/admin/dashboard"
+                        className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300 transform hover:scale-105"
+                      >
+                        Dashboard
+                        </Link>
+                    )}
                     <button
                         className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300 transform hover:scale-105"
                         onClick={handleLogoutClick}
                     >
                         Log Out
                     </button>
+                    </>
                 ) : (
                     <>
                         <button

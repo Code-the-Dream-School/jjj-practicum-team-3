@@ -1,6 +1,5 @@
 'use client';
 import {useEffect, useMemo, useRef, useState} from "react";
-import {movieData} from "@/data/movieData";
 import {theaterData} from "@/data/theaterData";
 import MovieSlider from "@/components/specific/MovieSlider";
 import FooterStrip from "@/components/shared/layout/FooterStrip";
@@ -33,24 +32,21 @@ const HomePage = ({ isMapsLoaded }: { isMapsLoaded: boolean }) => {
                 setLoading(false);
             }
         };
-
         fetchMovies();
     }, []);
+
     useEffect(() => {
         if (!locationInputRef.current || !isMapsLoaded) {
             return;
         }
-
         const initAutocomplete = () => {
             if (!window.google || !window.google.maps || !window.google.maps.places) {
                 console.error("Google Maps Places library not loaded.");
                 return;
             }
-
             const autocomplete = new window.google.maps.places.Autocomplete(locationInputRef.current, {
-                types: ['(cities)'],
+               types: ['(cities)'],
             });
-
             autocomplete.addListener('place_changed', () => {
                 const place = autocomplete.getPlace();
                 if (place.geometry && place.geometry.location) {
@@ -71,7 +67,6 @@ const HomePage = ({ isMapsLoaded }: { isMapsLoaded: boolean }) => {
             setShowTheaterDropdown(false);
         }
     }, [theaterFilter]);
-
     const filteredMovies = useMemo(() => {
         return movies.filter(movie =>
             movie.title.toLowerCase().includes(movieFilter.toLowerCase())
@@ -94,7 +89,6 @@ const HomePage = ({ isMapsLoaded }: { isMapsLoaded: boolean }) => {
         return movies.filter(movie => !movie.comingsoon && movie.title.toLowerCase().includes(movieFilter.toLowerCase()));
     }, [movies, movieFilter]);
 
-
     return (
         <main className="flex-grow container mx-auto px-4 py-0">
             <div className="w-full mb-2">
@@ -110,7 +104,7 @@ const HomePage = ({ isMapsLoaded }: { isMapsLoaded: boolean }) => {
                     onChange={(e) => setLocationFilter(e.target.value)}
                     disabled={!isMapsLoaded}
                 />
-                <input
+               <input
                     type="text"
                     placeholder="Movie"
                     className="w-full md:w-1/3 bg-gray-700 text-gray-200 p-3 rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -136,7 +130,6 @@ const HomePage = ({ isMapsLoaded }: { isMapsLoaded: boolean }) => {
                     )}
                 </div>
             </div>
-
             {loading ? (
                 <div className="text-center py-10 text-white">Loading movies...</div>
             ) : (
@@ -149,4 +142,5 @@ const HomePage = ({ isMapsLoaded }: { isMapsLoaded: boolean }) => {
         </main>
     );
 };
+
 export default HomePage;

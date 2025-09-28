@@ -1,99 +1,75 @@
 import { supabase } from "@/lib/supabaseClient";
-import { ITheater } from "@/types/ITheater";
+import { NextResponse } from "next/server";
+import { ITheater, ITheaterMovie, IShowtimes } from "@/interfaces/index";
 
-export async function PATCH(
-  req: Request,
-  { params }: { params: { id?: string } }
-) {
-  const { id } = await params;
-  if (!id) {
-    return new Response(JSON.stringify({ error: "Missing id" }), {
-      status: 400,
-      headers: { "Content-Type": "application/json" },
+export async function GET(request: Request, context: { params: Promise<{ id: string }> }) {
+  const params = await context.params;
+  const { id } = params;
+
+  try {
+    const { data, error } = await supabase
+        .from("theaters")
+        .select(`
+        id, name, address, latitude, longitude,
+        showtimes (
+          id, movie_id, theater_id, date, time, ticket_price, available_seats, created_at, is_active,
+          movies (
+            id, title, poster, runtime
+          )
+        )
+      `)
+        .eq("id", id)
+        .single();
+
+    if (error) {
+      console.error("Supabase error for theater ID:", id, error);
+      return NextResponse.json({ error: error.message }, { status: 500 });
+    }
+
+    if (!data) {
+      return NextResponse.json({ error: "Theater not found" }, { status: 404 });
+    }
+
+    const movieMap: { [key: string]: ITheaterMovie } = {};
+    data.showtimes.forEach((showtime: any) => {
+      const movieTitle = showtime.movies.title || "Unknown title";
+      if (!movieMap[movieTitle]) {
+        movieMap[movieTitle] = {
+          title: movieTitle,
+          showtimes: [],
+        };
+      }
+      movieMap[movieTitle].showtimes.push({
+        id: showtime.id,
+        movie_id: Number(showtime.movie_id), // Convert bigint to number
+        theater_id: showtime.theater_id,
+        date: showtime.date,
+        time: showtime.time,
+        ticket_price: showtime.ticket_price,
+        available_seats: showtime.available_seats,
+        created_at: showtime.created_at,
+        is_active: showtime.is_active,
+        movie: {
+          id: Number(showtime.movies.id),
+          title: showtime.movies.title || "Unknown title",
+          poster: showtime.movies.poster || "/placeholder.png",
+          runtime: showtime.movies.runtime || "Unknown runtime",
+        },
+      });
     });
+
+    const transformedData: ITheater = {
+      id: data.id,
+      name: data.name,
+      address: data.address,
+      latitude: data.latitude,
+      longitude: data.longitude,
+      movies: Object.values(movieMap),
+    };
+
+    return NextResponse.json(transformedData, { status: 200 });
+  } catch (err) {
+    console.error("Unexpected error for theater ID:", id, err);
+    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
   }
-  
-  const body = await req.json();
-  const theater = body as ITheater;
-
-  if (theater.name.length < 2 || theater.name.length > 100) {
-    return new Response(
-      JSON.stringify({ error: "Theater name must be 2–100 characters" }),
-      { headers: { "Content-Type": "application/json" }, status: 400 }
-    );
-  }
-
-  if (
-    (theater.latitude !== undefined && typeof theater.latitude !== "number") ||
-    (theater.longitude !== undefined && typeof theater.longitude !== "number")
-  ) {
-    return new Response(
-      JSON.stringify({ error: "Latitude and longitude must be numbers" }),
-      { headers: { "Content-Type": "application/json" }, status: 400 }
-    );
-  }
-  // remove id Primary Key property
-  const updates: Partial<ITheater> = { ...theater };
-  delete (updates as any).id;
-
-  //Remove null fields to avoid accidental null updates
-  for (const key of Object.keys(updates)) {
-    const value = (updates as any)[key];
-    if (value == null) delete (updates as any)[key];
-  }
-
-  const { data, error } = await supabase
-    .from("theaters")
-    .update(updates)
-    .eq("id", Number(id))
-    .select();
-
-  if (error) {
-    return new Response(JSON.stringify({ error: error.message }), {
-      status: 500,
-      headers: { "Content-Type": "application/json" },
-    });
-  }
-
-  return new Response(JSON.stringify(data), {
-    status: 200,
-    headers: { "Content-Type": "application/json" },
-  });
-}
-
-export async function DELETE(
-  req: Request,
-  { params }: { params: { id: string } }
-) {
-  const { id } = await params;
-
-  if (!id) {
-    return new Response(JSON.stringify({ error: "Missing id" }), {
-      status: 400,
-      headers: { "Content-Type": "application/json" },
-    });
-  }
-
-  const { error, count } = await supabase
-    .from("theaters")
-    .delete({ count: "exact" })
-    .eq("id", id);
-
-  if (error) {
-    return new Response(JSON.stringify({ error: error.message }), {
-      status: 500,
-      headers: { "Content-Type": "application/json" },
-    });
-  }
-  if (!count) {
-    return new Response(JSON.stringify({ error: `Theater ${id} not found` }), {
-      status: 404,
-      headers: { "Content-Type": "application/json" },
-    });
-  }
-
-  return new Response(JSON.stringify({ message: `Theater ${id} deleted` }), {
-    status: 200,
-    headers: { "Content-Type": "application/json" },
-  });
 }

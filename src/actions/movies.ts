@@ -5,16 +5,16 @@ import { IMovie } from "@/interfaces";
 //add movie
 export const addMovie = async (movie: Partial<IMovie> ) => {
     const { data, error } = await supabase.from("movies").insert([movie]);
-    
+
     if (error) {
         return {
-            success: false, 
+            success: false,
             message: error.message,
         };
     }
-    
+
         return {
-            success: true, 
+            success: true,
             message: "Movie added successfully",
         };
     };
@@ -25,16 +25,16 @@ export const updateMovie = async (id: string, movie: Partial<IMovie> ) => {
             .from("movies")
             .update(movie)
             .eq("id", id);
-        
+
         if (error) {
             return {
-                success: false, 
+                success: false,
                 message: error.message,
             };
         }
-        
+
         return {
-                success: true, 
+                success: true,
                 message: "Movie updated successfully",
             };
         };
@@ -45,16 +45,16 @@ export const deleteMovie = async (id: string) => {
                 .from("movies")
                 .delete()
                 .eq("id", id);
-    
+
     if (error) {
         return {
-            success: false, 
+            success: false,
             message: error.message,
         };
     }
-    
+
     return {
-            success: true, 
+            success: true,
             message: "Movie deleted successfully",
         };
     };
@@ -65,45 +65,45 @@ export const getMovieById = async (id: string) => {
                     .from("movies")
                     .select("*")
                     .eq("id", id)
-        
+
         if (error) {
             return {
-                success: false, 
+                success: false,
                 message: error.message,
             };
         }
-        
+
         if(!data || data.length === 0) {
             return {
-                success: false, 
+                success: false,
                 message: "Movie not found",
                 };
             }
-        
+
         const movie = data[0];
-        
-        
+
+
         return {
-                success: true, 
+                success: true,
                 data: movie as IMovie,
             };
         };
-        
+
 //get all movies
 export const getAllMovies = async () => {
     const { data, error } = await supabase
                 .from("movies")
                 .select("*")
-    
+
     if (error) {
         return {
-            success: false, 
+            success: false,
             message: error.message,
         };
     }
-    
+
     return {
-            success: true, 
+            success: true,
             data: data as IMovie[],
         };
     };
